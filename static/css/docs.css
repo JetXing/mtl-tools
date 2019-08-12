@@ -374,7 +374,12 @@ select::-ms-expand {
 .docs .whoused a{
     color: #E14C46;
 }
-
+.docs .doc-content a.anchor {
+    display: block;
+    position: relative;
+    top: -64px;
+    visibility: hidden;
+  }
 
 @media (max-width: 768px) {
     .docs .doc-content{

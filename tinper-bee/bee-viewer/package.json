@@ -33,8 +33,7 @@
   "chrome": "bee-tools-test run chrome",
   "coveralls": "bee-tools-test run coverage",
   "browsers": "bee-tools-test run browsers",
-  "pub": "bee-tools run pub",
-  "changelog": "bee-tools run changelog"
+  "pub": "bee-tools run pub"
  },
  "dependencies": {
   "babel-runtime": "^6.23.0",

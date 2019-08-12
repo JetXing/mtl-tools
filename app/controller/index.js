@@ -84,7 +84,7 @@ module.exports = {
     let removeFeature = ['bee-complex-grid','bee-city-select']
 
     let tag = ctx.url.split('tag=')[1]; //版本号
-    let component = ctx.params.component || 'summarize';
+    let component = ctx.params.component || '01-overview';
     let data = '';
     let filePath = '';
     let isComponentFlag = false; //是否是组件
@@ -147,13 +147,13 @@ module.exports = {
       );
 
       
-    } else if (component == 'changelog') {
+    } else if (component == 'changelog') {/* 
       rightMenus = docsMenus[component].menus;
       changeLog = sidebar['更新日志'].changeLog;
       filePath = path.join(__dirname, `../../docs/${component}.md`);
       data = await fs.readFileSync(filePath, 'utf-8');
-    } else {
-      rightMenus = docsMenus[component].menus;
+     */} else {
+      rightMenus = docsMenus[component]&&docsMenus[component].menus;
       changeLog = [];
       filePath = path.join(__dirname, `../../docs/${component}.md`);
       data = await fs.readFileSync(filePath, 'utf-8');
@@ -166,7 +166,7 @@ module.exports = {
 
 
       
-    let latestVersion = sidebar['更新日志']['version'];
+    // let latestVersion = sidebar['更新日志']['version'];
 
     await ctx.render('index', {
       sidebar: sidebar,
@@ -177,7 +177,7 @@ module.exports = {
       rightMenus: rightMenus,
       changeLog: changeLog,
       newComponent: newComponent, //有更新的组件
-      latestVersion: latestVersion
+      latestVersion: "5.0.0"
     });
   },
   cliBuildScss: async(ctx, next) => {
