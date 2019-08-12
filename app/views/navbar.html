@@ -2,14 +2,14 @@
     <div class="u-col-md-5 nav-left">
         <span class="nav-logo ">
             <a href="/">
-                <img src="//iuap-design-cdn.oss-cn-beijing.aliyuncs.com/static/tinper-bee/logo/iuapdesign.svg">
+                <img src="//mobile.yyuap.com/assets/fonts/mtl.7b2f9353.svg">
                 <span class='version'>V<%= latestVersion %></span>
             </a>
         </span>
         <span class="nav-split">|</span>
         <span class="nav-search">
             <div class="u-form-control-search u-form-control-affix-wrapper">
-                <input id="componentSearch" placeholder="在iuap design 中搜索" class="u-form-control " />
+                <input id="componentSearch" placeholder="在mtl-api-docs 中搜索" class="u-form-control " />
                 <div class="u-form-control-suffix">
                     <i class="uf uf-search"></i>
                 </div>
@@ -19,52 +19,57 @@
     <div class="u-col-md-7 nav-right">
         <ul class="nav-options">
             <li>
-                <a  href="/">首页</a>
-            </li>
-            <li class="language">设计语言</li>
-            <li>
-                <a class="first-show" href="#">基础组件</a>
+                <a  href="//mobile.yyuap.com/new/mtl/design/index.html">首页</a>
             </li>
             <li>
-                <a href="/tinper-acs">应用组件</a>
+                <a href="//mtltoolsdocs20190806.test.app.yyuap.com/">开发工具</a>
+            </li>
+            <li>
+                <a class="first-show" href="#">API Docs</a>
             </li>
             <li>
                 <a href="/ecology">社区精选</a>
             </li>
             <li>
-                <a  href="/prepaper">典型案例</a>
+                <a href="//mobile.yyuap.com/new/mtl/prepaper/">典型案例</a>
             </li>
             <li class="lang-select">
                 <div class="u-select u-select-focused u-select-enabled" id="selectLang">
-                    <div class="u-select-selection 
-        u-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false"
-                        tabindex="0">
-                        <div class="u-select-selection-rendered" name="input">
-                            <div class="u-select-selection-selected-value" title="简体中文" style="display: block; opacity: 1;">简体中文</div>
-                        </div>
-                        <span class="u-select-arrow" unselectable="unselectable" style="user-select: none;">
-                            <b></b>
-                        </span>
+                  <div class="u-select-selection 
+              u-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false"
+                    tabindex="0">
+                    <div class="u-select-selection-rendered" name="input">
+                      <div class="u-select-selection-selected-value" title="5.0.0" style="display: block; opacity: 1;">5.0.0</div>
                     </div>
+                    <span class="u-select-arrow" unselectable="unselectable" style="user-select: none;">
+                      <b></b>
+                    </span>
+                  </div>
                 </div>
                 <div id="selectList" class="select-list">
-                        <div>
-                            <div class="u-select-dropdown nav-lang-select u-select-dropdown--single u-select-dropdown-placement-bottomLeft " style="width: 100px; ">
-                                <div style="overflow: auto;">
-                                    <ul class="u-select-dropdown-menu u-select-dropdown-menu-vertical  u-menu-light u-select-dropdown-menu-root" role="menu"
-                                        aria-activedescendant="">
-                                        <li unselectable="unselectable" title="简体中文" class="u-select-dropdown-menu-item-selected u-select-dropdown-menu-item select-list" role="menuitem"
-                                            aria-selected="true" style="user-select: none;">简体中文</li>
-                                        <li unselectable="unselectable" title="繁体中文" class="u-select-dropdown-menu-item-disabled u-select-dropdown-menu-item select-list" role="menuitem"
-                                            aria-selected="false" aria-disabled="true" style="user-select: none;">繁体中文</li>
-                                        <li unselectable="unselectable" title="英文" class="u-select-dropdown-menu-item-disabled u-select-dropdown-menu-item select-list" role="menuitem"
-                                            aria-selected="false" aria-disabled="true" style="user-select: none;">英文</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                  <div>
+                    <div
+                      class="u-select-dropdown nav-lang-select u-select-dropdown--single u-select-dropdown-placement-bottomLeft "
+                      style="width: 100px; ">
+                      <div style="overflow: auto;">
+                        <ul
+                          class="u-select-dropdown-menu u-select-dropdown-menu-vertical  u-menu-light u-select-dropdown-menu-root"
+                          role="menu" aria-activedescendant="">
+                          <li unselectable="unselectable" title="5.0.0"
+                            class="u-select-dropdown-menu-item-selected u-select-dropdown-menu-item select-list" role="menuitem"
+                            aria-selected="true" style="user-select: none;">5.0.0</li>
+                          <li unselectable="unselectable" title="5.0.1"
+                            class="u-select-dropdown-menu-item-disabled u-select-dropdown-menu-item select-list" role="menuitem"
+                            aria-selected="false" aria-disabled="true" style="user-select: none;">5.0.1</li>
+                          <li unselectable="unselectable" title="5.0.2"
+                            class="u-select-dropdown-menu-item-disabled u-select-dropdown-menu-item select-list" role="menuitem"
+                            aria-selected="false" aria-disabled="true" style="user-select: none;">5.0.2</li>
+                        </ul>
+                      </div>
                     </div>
-            </li>
+                  </div>
+                </div>
+              </li>
         </ul>
     </div>
 </div>
@@ -76,12 +81,11 @@
     </a>
     <span class="uf uf-navmenu" onclick="displayOrHide()"> 
         <ul id="itemList0">
-            <li><a href="/" >首页</a></li>
-            <li class="lang">设计语言</li>
-            <li class="basecomp"><a href="#">基础组件</a></li>
-            <li><a href="/tinper-acs">应用组件</a></li>
+            <li><a href="//mobile.yyuap.com/new/mtl/design/index.html" >首页</a></li>
+            <li ><a href="//mtltoolsdocs20190806.test.app.yyuap.com/">开发工具</a></li>
+            <li class="basecomp"><a class="first-show" href="#">API Docs</a></li>
             <li><a href="/ecology">社区精选</a></li>
-            <li><a href="/prepaper">典型案例</a></li>
+            <a href="//mobile.yyuap.com/new/mtl/prepaper/">典型案例</a>
         </ul>
     </span>
 </div>
