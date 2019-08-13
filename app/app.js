@@ -29,6 +29,6 @@ middleware(app)
 app.on('error', err => {
     console.log('server error', err)
   });
-app.listen(3000, () => {
-    console.log('服务运行在 http://localhost:3000')
+app.listen(3002, () => {
+    console.log('服务运行在 http://localhost:3002')
 })
