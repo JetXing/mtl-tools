@@ -2,302 +2,60 @@
   "概述": {
     "version": "5.0.0",
     "component": "01-overview",
-    "menus": {
-      "简介": "简介",
-      "功能框架": "功能框架"
-    }
+    "menus": {}
   },
-  "常用原生能力": {
+  "命令行": {
     "version": "5.0.0",
     "component": "gjtx",
     "children": {
       "": {
-        "设备信息": {
+        "快速开始": {
           "version": "5.0.0",
-          "component": "0201-get-deviceinfo-api",
-          "menus": {
-            "MTL_platform": "platform",
-            "MTL_getNetworkType": "getNetworkType"
-          }
+          "component": "0201-mtl-cli-quick-start",
+          "menus": {}
         },
-        "页面导航": {
+        "调试": {
           "version": "5.0.0",
-          "component": "0202-navigation-api",
-          "menus": {
-            "MTL_navigateTo": "navigateTo",
-            "MTL_redirectTo": "redirectTo",
-            "MTL_navigateBack": "navigateBack"
-          }
+          "component": "0202-mtl-cli-debug",
+          "menus": {}
         },
-        "图像接口": {
+        "预览": {
           "version": "5.0.0",
-          "component": "0203-image-api",
-          "menus": {
-            "MTL_chooseImage": "chooseImage",
-            "MTL_previewImage": "previewImage",
-            "MTL_uploadImage": "uploadImage",
-            "MTL_downloadImage": "downloadImage",
-            "MTL_getLocalImgSrc": "getLocalImgSrc",
-            "MTL_getLocalImgData": "getLocalImgData"
-          }
+          "component": "0203-mtl-cli-preview",
+          "menus": {}
         },
-        "音频接口": {
+        "详细帮助文档": {
           "version": "5.0.0",
-          "component": "0204-audio-api",
-          "menus": {
-            "MTL_startRecord": "startRecord",
-            "MTL_stopRecord": "stopRecord",
-            "MTL_onVoiceRecordEnd": "onVoiceRecordEnd",
-            "MTL_playVoice": "playVoice",
-            "MTL_pauseVoice": "pauseVoice",
-            "MTL_stopVoice": "stopVoice",
-            "MTL_onVoicePlayEnd": "onVoicePlayEnd",
-            "MTL_uploadVoice": "uploadVoice",
-            "MTL_downloadVoice": "downloadVoice"
-          }
-        },
-        "地理位置": {
-          "version": "5.0.0",
-          "component": "0205-location-api",
-          "menus": {
-            "MTL_getLocation": "getLocation",
-            "MTL_openLocation": "openLocation"
-          }
-        },
-        "二维码": {
-          "version": "5.0.0",
-          "component": "0206-qrcode-api",
-          "menus": {
-            "MTL_scanQRCode": "scanQRCode",
-            "MTL_generateQRCode": "generateQRCode"
-          }
-        },
-        "网络请求": {
-          "version": "5.0.0",
-          "component": "0207-network-api",
-          "menus": {
-            "MTL_request": "request",
-            "MTL_uploadFile": "uploadFile"
-          }
-        },
-        "数据缓存": {
-          "version": "5.0.0",
-          "component": "0208-datastorage-api",
-          "menus": {
-            "MTL_setStorage": "setStorage",
-            "MTL_getStorage": "getStorage",
-            "MTL_removeStorage": "removeStorage",
-            "MTL_clearStorage": "clearStorage"
-          }
+          "component": "0204-mtl-cli-help",
+          "menus": {}
         }
       }
     }
   },
-  "智能能力": {
+  "IDE": {
     "version": "5.0.0",
     "component": "gjtx",
     "children": {
       "": {
-        "语音转文字": {
+        "快速开始": {
           "version": "5.0.0",
-          "component": "0301-translatevoice-api",
-          "menus": {
-            "MTL_translateVoice": "translateVoice",
-            "MTL_voiceToText": "voiceToText"
-          }
+          "component": "0301-mtl-ide-quick-start",
+          "menus": {}
         },
-        "OCR识别": {
+        "调试": {
           "version": "5.0.0",
-          "component": "0302-ocr-api",
-          "menus": {
-            "MTL_scanInvoice": "scanInvoice",
-            "MTL_recognizeInvoice": "recognizeInvoice",
-            "MTL_scanIDCard": "scanIDCard",
-            "MTL_recognizeIDCard": "recognizeIDCard",
-            "MTL_scanBankCard": "scanBankCard",
-            "MTL_recognizeBankCard": "recognizeBankCard"
-          }
+          "component": "0302-mtl-ide-debug",
+          "menus": {}
         },
-        "人脸识别": {
+        "预览": {
           "version": "5.0.0",
-          "component": "0303-face-api",
-          "menus": {
-            "MTL_initFace": "initFace",
-            "MTL_faceRegister": "faceRegister",
-            "MTL_faceVerify": "faceVerify"
-          }
-        }
-      }
-    }
-  },
-  "多端协同": {
-    "version": "5.0.0",
-    "component": "0401-mtlcoop-api",
-    "menus": {
-      "MTL_coopInitialize": "初始化",
-      "MTL_coopLogin": "登录",
-      "MTL_coopLogout": "退出登录",
-      "MTL_coopGetOpenId": "获取当前设备的 openId",
-      "MTL_coopGetDeviceInfo": "获取 openId 对应设备的相关信息",
-      "MTL_coopRequestAccessTo": "请求对方设备访问权限",
-      "MTL_coopReceiveAccessRequest": "接收到设备访问权限请求",
-      "MTL_coopAgreeAccessRequest": "同意设备访问权限请求",
-      "MTL_coopRejectAccessRequest": "拒绝设备访问权限请求",
-      "MTL_coopGetMyDevices": "获取我的设备列表",
-      "MTL_coopGetAuthorizedDevices": "获取我授权的设备列表",
-      "MTL_coopGetAccessibleDevices": "获取授权给我的设备列表",
-      "MTL_coopGetAllDevices": "获取所有设备列表（授权+被授权）",
-      "MTL_coopRemoveAuthorizedDevice": "移除我授权的设备",
-      "MTL_coopRemoveAccessibleDevice": "移除授权给我设备",
-      "MTL_coopRemoveMyDevice": "移除我的设备",
-      "MTL_coopSendCommand": "发送指令",
-      "MTL_coopReceiveCommand": "接收指令",
-      "MTL_coopReplyCommand": "回复指令"
-    }
-  },
-  "UCG网关": {
-    "version": "5.0.0",
-    "component": "gjtx",
-    "children": {
-      "": {
-        "读写配置": {
-          "version": "5.0.0",
-          "component": "0501-ucgconfig-api",
-          "menus": {
-            "MTL_ucgWriteUCGConfig": "writeUCGConfig",
-            "MTL_ucgReadUCGConfig": "readUCGConfig"
-          }
+          "component": "0303-mtl-ide-preview",
+          "menus": {}
         },
-        "登录认证": {
+        "详细帮助文档": {
           "version": "5.0.0",
-          "component": "0502-ucglogin-api",
-          "menus": {
-            "MTL_ucgLogin": "login",
-            "MTL_ucgOauth": "oauth",
-            "MTL_ucgBindUser": "oauthBind",
-            "MTL_ucgGetToken": "getToken"
-          }
-        },
-        "服务调用": {
-          "version": "5.0.0",
-          "component": "0503-ucgcallaction-api",
-          "menus": {
-            "MTL_ucgCallAction": "callAction"
-          }
-        }
-      }
-    }
-  },
-  "企业业务接口": {
-    "version": "5.0.0",
-    "component": "gjtx",
-    "children": {
-      "": {
-        "查看人员信息": {
-          "version": "5.0.0",
-          "component": "0601-upesnviewuserinfo-api",
-          "menus": {
-            "MTL_upesnViewUserInfo": "viewUserInfo",
-            "MTL_getNetworkType": ""
-          }
-        },
-        "选择联系人(不跨空间)": {
-          "version": "5.0.0",
-          "component": "0602-upesnchoosecontacts-api",
-          "menus": {
-            "MTL_upesnChooseContacts": "chooseContacts"
-          }
-        },
-        "跨空间选择联系人": {
-          "version": "5.0.0",
-          "component": "0603-upesnchooseallcontacts-api",
-          "menus": {
-            "MTL_upesnChooseAllContacts": "chooseAllContacts"
-          }
-        },
-        "选择内部群": {
-          "version": "5.0.0",
-          "component": "0604-upesnchooseinsidegroup-api",
-          "menus": {
-            "MTL_upesnChooseInsideGroup": "chooseInsideGroup"
-          }
-        },
-        "新建发言": {
-          "version": "5.0.0",
-          "component": "0605-upesncreatefeedcomponent-api",
-          "menus": {
-            "MTL_upesnCreateFeedComponent": "createFeedComponent"
-          }
-        },
-        "发起单聊会话": {
-          "version": "5.0.0",
-          "component": "0606-upesnopenchatbyuserid-api",
-          "menus": {
-            "MTL_upesnOpenChatByUserId": "openChatByUserId"
-          }
-        },
-        "新建日程": {
-          "version": "5.0.0",
-          "component": "0607-upesncreatenewschedule-api",
-          "menus": {
-            "MTL_upesnCreateNewSchedule": "createNewSchedule"
-          }
-        },
-        "查看日程列表": {
-          "version": "5.0.0",
-          "component": "0608-upesnviewschedulelist-api",
-          "menus": {
-            "MTL_upesnViewScheduleList": "viewScheduleList"
-          }
-        },
-        "打开日程详情": {
-          "version": "5.0.0",
-          "component": "0609-upesnviewscheduledetail-api",
-          "menus": {
-            "MTL_upesnViewScheduleDetail": "viewScheduleDetail"
-          }
-        },
-        "打开小友": {
-          "version": "5.0.0",
-          "component": "0610-upesnopenxychatview-api",
-          "menus": {
-            "MTL_upesnOpenXYChatView": "openXYChatView"
-          }
-        },
-        "发送微邮": {
-          "version": "5.0.0",
-          "component": "0611-upesnsendminimail-api",
-          "menus": {
-            "MTL_upesnSendMiniMail": "sendMiniMail"
-          }
-        },
-        "打开文库具体路径": {
-          "version": "5.0.0",
-          "component": "0612-upesnopenlibraryfiles-api",
-          "menus": {
-            "MTL_upesnOpenLibraryFiles": "openLibraryFiles"
-          }
-        },
-        "文件预览": {
-          "version": "5.0.0",
-          "component": "0613-upesnpreviewdoc-api",
-          "menus": {
-            "MTL_upesnPreviewDoc": "previewDoc"
-          }
-        },
-        "选择文库文件": {
-          "version": "5.0.0",
-          "component": "0614-upesnchooselibraryfiles-api",
-          "menus": {
-            "MTL_upesnChooseLibraryFiles": "chooseLibraryFiles"
-          }
-        },
-        "获取个人友互通信息": {
-          "version": "5.0.0",
-          "component": "0615-upesngetuseryhtinfo-api",
-          "menus": {
-            "MTL_upesnGetUserYHTInfo": "getUserYHTInfo"
-          }
+          "component": "0304-mtl-ide-help",
+          "menus": {}
         }
       }
     }
