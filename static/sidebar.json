@@ -39,6 +39,11 @@
             "构建":"构建",
             "FAQ":"FAQ"
           }
+        },
+        "插件说明文档": {
+          "version": "5.0.0",
+          "component": "0205-mtl-cli-plugin",
+          "menus": {}
         }
       }
     }
