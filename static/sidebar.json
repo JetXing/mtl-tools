@@ -33,6 +33,12 @@
           "component": "0301-mtl-ide-quick-start",
           "menus": {}
         },
+        "MTL-IDE可以做什么": {
+          "version": "5.0.0",
+          "component": "0301-mtl-ide-overview",
+          "menus": {
+          }
+        },
         "调试": {
           "version": "5.0.0",
           "component": "0302-mtl-ide-debug",
@@ -46,7 +52,9 @@
         "详细帮助文档": {
           "version": "5.0.0",
           "component": "0304-mtl-ide-help",
-          "menus": {}
+          "menus": {
+            "oNuib":"界面"
+          }
         }
       }
     }
