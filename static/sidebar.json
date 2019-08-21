@@ -9,9 +9,29 @@
     "component": "gjtx",
     "children": {
       "": {
+        "快速开始": {
+          "version": "5.0.0",
+          "component": "0201-mtl-cli-quick-start",
+          "menus": {}
+        },
+        "调试": {
+          "version": "5.0.0",
+          "component": "0202-mtl-cli-debug",
+          "menus": {}
+        },
+        "预览": {
+          "version": "5.0.0",
+          "component": "0203-mtl-cli-preview",
+          "menus": {}
+        },
+        "构建": {
+          "version": "5.0.0",
+          "component": "0204-mtl-cli-build",
+          "menus": {}
+        },
         "详细帮助文档": {
           "version": "5.0.0",
-          "component": "0201-mtl-cli-detail",
+          "component": "0205-mtl-cli-detail",
           "menus": {
             "快速开始":"快速开始",
             "调试":"调试",

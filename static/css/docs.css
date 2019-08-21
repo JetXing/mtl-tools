@@ -234,6 +234,7 @@ pre {
 
 .docs .doc-content img {
     max-height: 500px;
+    max-width: 100%;
 }
 
 .docs .doc-content .title-right {
