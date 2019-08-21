@@ -434,7 +434,7 @@ select::-ms-expand {
     display: none
 }
 
-ul {
+.docs .doc-content  ul {
     margin: 10px;
     padding: 10px;
     list-style: disc;
