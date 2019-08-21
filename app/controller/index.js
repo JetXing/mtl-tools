@@ -9,13 +9,13 @@ const components = require('../../static/components.json');
 const newComponent = require('../../static/new.json'); //有更新的组件
 const renderer = new marked.Renderer();
 
-renderer.heading = function (text, level) {
-  if (level > 1) {
-    return `<h${level} id="${text}">${text}</h${level}/>`
-  } else {
-    return `<h${level}>${text}</h${level}/>`
-  }
-}
+// renderer.heading = function (text, level) {
+//   if (level > 1) {
+//     return `<h${level} id="${text}">${text}</h${level}/>`
+//   } else {
+//     return `<h${level}>${text}</h${level}/>`
+//   }
+// }
 
 renderer.link = function (href, title, text) {
   var target = '';
@@ -37,7 +37,6 @@ marked.setOptions({
   smartLists: true,
   smartypants: false
 });
-
 
 /**
  * 获得文档的导航菜单
@@ -158,12 +157,13 @@ module.exports = {
       filePath = path.join(__dirname, `../../docs/${component}.md`);
       data = await fs.readFileSync(filePath, 'utf-8');
     }
-
+    console.log('渲染前：', data);
     data = marked(data);
+    console.log('渲染后1：', data);
     data = data
       .replace(/\<table/gi, '<div class="table-container">\n<table')
       .replace(/<\/table>/gi, "</table>\n</div>\n");
-
+      console.log('渲染后2：', data);
 
       
     // let latestVersion = sidebar['更新日志']['version'];
