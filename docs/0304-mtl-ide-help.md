@@ -30,7 +30,10 @@
 - 输入名称
 - 点击添加
 - 在[目录文件区](#87vl8)-点击 --刷新按钮
-[![屏幕录制 2019-08-17 上午11.06.06.mov (4.14MB)](https://cdn.nlark.com/yuque/0/2019/jpeg/271500/1566012347833-06e260e4-6a81-4aff-9bf5-de2cdeeb372e.jpeg?x-oss-process=image/resize,h_450)](https://www.yuque.com/mtldev/gd9vnw/agegao?_lake_card=%7B%22status%22%3A%22done%22%2C%22name%22%3A%22%E5%B1%8F%E5%B9%95%E5%BD%95%E5%88%B6+2019-08-17+%E4%B8%8A%E5%8D%8811.06.06.mov%22%2C%22size%22%3A4343672%2C%22percent%22%3A0%2C%22id%22%3A%22504I1%22%2C%22videoId%22%3A%22958f544c75e04c6db92606c695fa3837%22%2C%22aliyunVideoSrc%22%3Anull%2C%22taobaoVideoId%22%3A%22233947663317%22%2C%22uploaderId%22%3A271500%2C%22authKey%22%3A%22YXBwX2tleT04MDAwMDAwMTImYXV0aF9pbmZvPXsidGltZXN0YW1wRW5jcnlwdGVkIjoiYTZlMzZkODkyOTljZTBhNWNjZTEyZGE4ZGUzMWMyYjkifSZkdXJhdGlvbj0mdGltZXN0YW1wPTE1NjYzNjk0NDg%3D%22%2C%22docUrl%22%3A%22https%3A%2F%2Fwww.yuque.com%2Fmtldev%2Fgd9vnw%2Fagegao%22%2C%22coverUrl%22%3A%22https%3A%2F%2Fcdn.nlark.com%2Fyuque%2F0%2F2019%2Fjpeg%2F271500%2F1566012347833-06e260e4-6a81-4aff-9bf5-de2cdeeb372e.jpeg%22%2C%22card%22%3A%22video%22%7D#504I1)
+<video preload="none" data-src="https://cloud.video.taobao.com/play/u/271500/p/1/e/6/t/1/233947663317.mp4?auth_key=YXBwX2tleT04MDAwMDAwMTImYXV0aF9pbmZvPXsidGltZXN0YW1wRW5jcnlwdGVkIjoiYTY5MDIzNGE5MTRmMDA4MTFmOTk4ZDc2OTViNjdiOGYifSZkdXJhdGlvbj0mdGltZXN0YW1wPTE1NjYzNzI0NTc=" webkit-playsinline="webkit-playsinline" playsinline="playsinline" class="lozad" poster="https://cdn.nlark.com/yuque/0/2019/jpeg/271500/1566012347833-06e260e4-6a81-4aff-9bf5-de2cdeeb372e.jpeg" controls="" controlslist="nodownload" src="https://cloud.video.taobao.com/play/u/271500/p/1/e/6/t/1/233947663317.mp4?auth_key=YXBwX2tleT04MDAwMDAwMTImYXV0aF9pbmZvPXsidGltZXN0YW1wRW5jcnlwdGVkIjoiYTY5MDIzNGE5MTRmMDA4MTFmOTk4ZDc2OTViNjdiOGYifSZkdXJhdGlvbj0mdGltZXN0YW1wPTE1NjYzNzI0NTc=" data-loaded="true"></video>
+
+
+
 <a name="Jj9PK"></a>
 ### 
 <a name="87vl8"></a>
@@ -82,8 +85,7 @@
 # 代码编辑
 <a name="mibVz"></a>
 ### mtlAPI快速插入
-
-[![屏幕录制 2019-08-17 上午10.39.48.mov (2.85MB)](https://cdn.nlark.com/yuque/0/2019/jpeg/271500/1566012347882-c878d424-5ccd-4b8a-9162-ade8fb637de4.jpeg?x-oss-process=image/resize,h_450)](https://www.yuque.com/mtldev/gd9vnw/agegao?_lake_card=%7B%22status%22%3A%22done%22%2C%22name%22%3A%22%E5%B1%8F%E5%B9%95%E5%BD%95%E5%88%B6+2019-08-17+%E4%B8%8A%E5%8D%8810.39.48.mov%22%2C%22size%22%3A2984303%2C%22percent%22%3A0%2C%22id%22%3A%22xOWK0%22%2C%22videoId%22%3A%229cf604eff6a748d0a4441ed9af0d021c%22%2C%22aliyunVideoSrc%22%3Anull%2C%22taobaoVideoId%22%3A%22233946019348%22%2C%22uploaderId%22%3A271500%2C%22authKey%22%3A%22YXBwX2tleT04MDAwMDAwMTImYXV0aF9pbmZvPXsidGltZXN0YW1wRW5jcnlwdGVkIjoiYTZlMzZkODkyOTljZTBhNWNjZTEyZGE4ZGUzMWMyYjkifSZkdXJhdGlvbj0mdGltZXN0YW1wPTE1NjYzNjk0NDg%3D%22%2C%22docUrl%22%3A%22https%3A%2F%2Fwww.yuque.com%2Fmtldev%2Fgd9vnw%2Fagegao%22%2C%22coverUrl%22%3A%22https%3A%2F%2Fcdn.nlark.com%2Fyuque%2F0%2F2019%2Fjpeg%2F271500%2F1566012347882-c878d424-5ccd-4b8a-9162-ade8fb637de4.jpeg%22%2C%22card%22%3A%22video%22%7D#xOWK0)
+<video preload="none" data-src="https://cloud.video.taobao.com/play/u/271500/p/1/e/6/t/1/233946019348.mp4?auth_key=YXBwX2tleT04MDAwMDAwMTImYXV0aF9pbmZvPXsidGltZXN0YW1wRW5jcnlwdGVkIjoiYTY5MDIzNGE5MTRmMDA4MTFmOTk4ZDc2OTViNjdiOGYifSZkdXJhdGlvbj0mdGltZXN0YW1wPTE1NjYzNzI0NTc=" webkit-playsinline="webkit-playsinline" playsinline="playsinline" class="lozad" poster="https://cdn.nlark.com/yuque/0/2019/jpeg/271500/1566012347882-c878d424-5ccd-4b8a-9162-ade8fb637de4.jpeg" controls="" controlslist="nodownload" src="https://cloud.video.taobao.com/play/u/271500/p/1/e/6/t/1/233946019348.mp4?auth_key=YXBwX2tleT04MDAwMDAwMTImYXV0aF9pbmZvPXsidGltZXN0YW1wRW5jcnlwdGVkIjoiYTY5MDIzNGE5MTRmMDA4MTFmOTk4ZDc2OTViNjdiOGYifSZkdXJhdGlvbj0mdGltZXN0YW1wPTE1NjYzNzI0NTc=" data-loaded="true"></video>
 <a name="YM23x"></a>
 ### 自动补全
 

@@ -439,6 +439,10 @@ select::-ms-expand {
     padding: 10px;
     list-style: disc;
 }
+.docs .doc-content video {
+    max-height:400px;
+    width: 100%;
+}
 
 /* 企业级ui交互能力 */
 .docs .doc-content .interact img {
