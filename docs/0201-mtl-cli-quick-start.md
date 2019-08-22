@@ -20,7 +20,7 @@ web | 移动Web应用
 兼容  Mac 和 win 操作系统。
 
 ### 前置软件安装
-+ 首先安装node.js、npm
++ 首先安装node.js、npm、git
 
 
 ### 安装mtl
