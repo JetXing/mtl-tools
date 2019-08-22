@@ -19,10 +19,16 @@
           "component": "0202-mtl-cli-debug",
           "menus": {}
         },
+        "钉钉调试": {
+          "version": "5.0.0",
+          "component": "0202-mtl-cli-dd-debug",
+          "menus": {}
+        },
         "预览": {
           "version": "5.0.0",
           "component": "0203-mtl-cli-preview",
-          "menus": {}
+          "menus": {
+          }
         },
         "构建": {
           "version": "5.0.0",
