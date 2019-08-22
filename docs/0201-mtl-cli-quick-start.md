@@ -136,6 +136,63 @@ mtl  set-packageName
 mtl  set-bundleID   
 
 ```
+### 设置应用图标和启动图
+app/css/themes/default/app/android、ios 文件夹下更改android、ios的图标和启动图。
+遵循android、ios原生配置图标和启动图配置方式。
+
+#### ios: 
+
++ 图标-icon文件夹
+    
+包含Contents.json文件和图片资源
+```
+Contents.json 配置图片
+{
+    "images" : [
+        {
+            "idiom" : "iphone",             // ipad、ios-marketing
+            "size" : "20x20",               //40x40 图标大小
+            "filename" : "iphone20@2x.png", //@3x.png  图片名称
+            "scale" : "2x"                  // 3x
+        },
+        {...}
+    ],
+    "info" : {
+        "version" : 1,
+        "author" : "xcode"
+    }
+}
+```
++ 启动图-launch文件夹
+    
+包含Contents.json文件和图片资源
+
+```
+Contents.json 配置图片
+{
+	"images" : [
+		{
+		    "orientation" : "portrait",                 // landscape
+		    "idiom" : "iphone",                         // ipad
+		    "extent" : "full-screen", 
+		    "filename" : "iphone-portrait-736h@3x.png", // 图片名称
+		    "minimum-system-version" : "8.0",           // 支持系统版本最小值
+		    "subtype" : "736h",                         // 适配类型
+		    "scale" : "3x"                              //2x
+		},
+        {...}
+	],
+	"info" : {
+		"version" : 1,
+		"author" : "xcode"
+	}
+}
+```
+		
+#### andriod
++ app.png 应用图标(名称固定)
++ launch.png 启动图	(名称固定)	
+
 ### 设置首页
 ```
 mtl  set-startPage   
