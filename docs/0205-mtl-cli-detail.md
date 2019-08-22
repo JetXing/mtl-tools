@@ -66,7 +66,7 @@ modelname
 ```
 mtl  add-plugin 
 ```
-现在拥有的插件 ，持续开发中：
+现在拥有的插件 ，持续开发中：[插件说明](http://mtltoolsdocs20190806.test.app.yyuap.com/0206-mtl-cli-plugin)
 + mtl-plugin-faceverify 人脸识别
 + mtl-plugin-bdlocation 定位
 + mtl-plugin-terminal   多端控制

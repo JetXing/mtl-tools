@@ -113,9 +113,18 @@ project.json文件 是工程配置文件，工程的信息以及各个端需要�
 + ddAppCode、wxAppCode ： WX 、DD 小程序的接入code 。
 + cordovaPlugins ： 配置调用原生能力的插件列表。
 + technologyStack ： 这个是技术栈 ，要支持传统H5、react 、以及VUE等等框架。现在支持H5，以及即将上线的react框架。
++ setStatusBar ： 设置状态栏颜色（可为空)，参数如下:
 
-
-
+	```
+	showStatusBar：是否显示状态栏；
+	isScreenEdge：是否从屏幕顶端开始，还是从状态栏下面开始；
+	color：状态栏背景颜色；
+	isStatusBarDefault：状态栏颜色是否是默认颜色(黑色)，否是白色
+	
+	1、为空默认值：showStatusBar : YES, isScreenEdge : NO, color: 透明, isStatusBarDefault : YES;
+	2、showStatusBar为NO时，隐藏状态栏时 isScreenEdge默认为YES;
+    3、color #000000 为16进制值
+	```
 
 ### 设置android包名
 ```
@@ -156,7 +165,7 @@ modelname
 ```
 mtl  add-plugin 
 ```
-现在拥有的插件 ，持续开发中：
+现在拥有的插件 ，持续开发中：[插件说明](http://mtltoolsdocs20190806.test.app.yyuap.com/0206-mtl-cli-plugin)
 + mtl-plugin-faceverify 人脸识别
 + mtl-plugin-bdlocation 定位
 + mtl-plugin-terminal   多端控制

@@ -42,7 +42,7 @@
         },
         "插件说明文档": {
           "version": "5.0.0",
-          "component": "0205-mtl-cli-plugin",
+          "component": "0206-mtl-cli-plugin",
           "menus": {}
         }
       }
