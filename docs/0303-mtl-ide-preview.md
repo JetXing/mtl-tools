@@ -10,7 +10,7 @@
 - 操作栏
   - 刷新
 
-脚本执行含义<br />注意：[**熟悉mtl-cli命令的可以自行定义**](http://mtltoolsdocs20190806.test.app.yyuap.com/0201-mtl-cli-detail)
+脚本执行含义<br />注意：[**熟悉mtl-cli命令的可以自行定义**](http://mtltoolsdocs20190806.test.app.yyuap.com/0205-mtl-cli-detail)
 
 - build    目录打包Android ios原生包
 - debug  调试 
