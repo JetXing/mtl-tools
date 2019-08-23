@@ -1,4 +1,4 @@
-<a name="构建" class="anchor"></a >
+
 # 构建
 ```
 mtl build [ iOS | Android ]
@@ -36,10 +36,3 @@ mtl set-git
 + 根据提示 输入git仓库URL ，分支 ，账户，密码。
 
 
-### 设置环境变量
-```
-mtl set-config key value
-
-//设置git的地址
-mtl set-config git-url http://git.yonyou.com/xxx/xxx/
-```
