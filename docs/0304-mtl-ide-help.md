@@ -30,7 +30,8 @@
 - 输入名称
 - 点击添加
 - 在[目录文件区](#87vl8)-点击 --刷新按钮
-<video preload="none" data-src="https://cloud.video.taobao.com/play/u/271500/p/1/e/6/t/1/233947663317.mp4?auth_key=YXBwX2tleT04MDAwMDAwMTImYXV0aF9pbmZvPXsidGltZXN0YW1wRW5jcnlwdGVkIjoiYTY5MDIzNGE5MTRmMDA4MTFmOTk4ZDc2OTViNjdiOGYifSZkdXJhdGlvbj0mdGltZXN0YW1wPTE1NjYzNzI0NTc=" webkit-playsinline="webkit-playsinline" playsinline="playsinline" class="lozad" poster="https://cdn.nlark.com/yuque/0/2019/jpeg/271500/1566012347833-06e260e4-6a81-4aff-9bf5-de2cdeeb372e.jpeg" controls="" controlslist="nodownload" src="https://cloud.video.taobao.com/play/u/271500/p/1/e/6/t/1/233947663317.mp4?auth_key=YXBwX2tleT04MDAwMDAwMTImYXV0aF9pbmZvPXsidGltZXN0YW1wRW5jcnlwdGVkIjoiYTY5MDIzNGE5MTRmMDA4MTFmOTk4ZDc2OTViNjdiOGYifSZkdXJhdGlvbj0mdGltZXN0YW1wPTE1NjYzNzI0NTc=" data-loaded="true"></video>
+
+<video preload="none" data-src="https://cloud.video.taobao.com/play/u/271500/p/1/e/6/t/1/233947663317.mp4?auth_key=YXBwX2tleT04MDAwMDAwMTImYXV0aF9pbmZvPXsidGltZXN0YW1wRW5jcnlwdGVkIjoiN2Q5MWQxNTc2OTNlYTE2MjZjNmZiZTU0ZjlmZjIyY2YifSZkdXJhdGlvbj0mdGltZXN0YW1wPTE1NjY1MzEzODc=" webkit-playsinline="webkit-playsinline" playsinline="playsinline" class="lozad" poster="https://cdn.nlark.com/yuque/0/2019/jpeg/271500/1566012347833-06e260e4-6a81-4aff-9bf5-de2cdeeb372e.jpeg" controls="" controlslist="nodownload" src="https://cloud.video.taobao.com/play/u/271500/p/1/e/6/t/1/233947663317.mp4?auth_key=YXBwX2tleT04MDAwMDAwMTImYXV0aF9pbmZvPXsidGltZXN0YW1wRW5jcnlwdGVkIjoiN2Q5MWQxNTc2OTNlYTE2MjZjNmZiZTU0ZjlmZjIyY2YifSZkdXJhdGlvbj0mdGltZXN0YW1wPTE1NjY1MzEzODc=" data-loaded="true"></video>
 
 
 
@@ -62,8 +63,8 @@
 - build    点击执行 打包Android  ios原生包(目前支持)
 - debug  调试 
 - preview 执行后会生成预览二维码分为以下几种
-  - **Android**  在下载中心 查找 [MTL-JSAPI-原生预览工具-Android预览工具](http://mobile.yyuap.com/new/mtl/download/) 下载安装后扫码即可
-  - **IOS**         在下载中心 查找 [MTL-JSAPI-原生预览工具-IOS预览工具]() 下载安装后扫码即可
+  - **Android**  在下载中心 查找 [MTL-JSAPI-原生预览工具-Android预览工具](http://mobile.yyuap.com/mtl/download/) 下载安装后扫码即可
+  - **IOS**         在下载中心 查找 [MTL-JSAPI-原生预览工具-IOS预览工具](http://mobile.yyuap.com/mtl/download/) 下载安装后扫码即可
   - **微信 **        用手机扫码即可
   - **upesn**     用手机友空间扫码
 - <br />
@@ -85,7 +86,9 @@
 # 代码编辑
 <a name="mibVz"></a>
 ### mtlAPI快速插入
-<video preload="none" data-src="https://cloud.video.taobao.com/play/u/271500/p/1/e/6/t/1/233946019348.mp4?auth_key=YXBwX2tleT04MDAwMDAwMTImYXV0aF9pbmZvPXsidGltZXN0YW1wRW5jcnlwdGVkIjoiYTY5MDIzNGE5MTRmMDA4MTFmOTk4ZDc2OTViNjdiOGYifSZkdXJhdGlvbj0mdGltZXN0YW1wPTE1NjYzNzI0NTc=" webkit-playsinline="webkit-playsinline" playsinline="playsinline" class="lozad" poster="https://cdn.nlark.com/yuque/0/2019/jpeg/271500/1566012347882-c878d424-5ccd-4b8a-9162-ade8fb637de4.jpeg" controls="" controlslist="nodownload" src="https://cloud.video.taobao.com/play/u/271500/p/1/e/6/t/1/233946019348.mp4?auth_key=YXBwX2tleT04MDAwMDAwMTImYXV0aF9pbmZvPXsidGltZXN0YW1wRW5jcnlwdGVkIjoiYTY5MDIzNGE5MTRmMDA4MTFmOTk4ZDc2OTViNjdiOGYifSZkdXJhdGlvbj0mdGltZXN0YW1wPTE1NjYzNzI0NTc=" data-loaded="true"></video>
+
+<video preload="none" data-src="https://cloud.video.taobao.com/play/u/271500/p/1/e/6/t/1/233946019348.mp4?auth_key=YXBwX2tleT04MDAwMDAwMTImYXV0aF9pbmZvPXsidGltZXN0YW1wRW5jcnlwdGVkIjoiN2Q5MWQxNTc2OTNlYTE2MjZjNmZiZTU0ZjlmZjIyY2YifSZkdXJhdGlvbj0mdGltZXN0YW1wPTE1NjY1MzEzODc=" webkit-playsinline="webkit-playsinline" playsinline="playsinline" class="lozad" poster="https://cdn.nlark.com/yuque/0/2019/jpeg/271500/1566012347882-c878d424-5ccd-4b8a-9162-ade8fb637de4.jpeg" controls="" controlslist="nodownload" src="https://cloud.video.taobao.com/play/u/271500/p/1/e/6/t/1/233946019348.mp4?auth_key=YXBwX2tleT04MDAwMDAwMTImYXV0aF9pbmZvPXsidGltZXN0YW1wRW5jcnlwdGVkIjoiN2Q5MWQxNTc2OTNlYTE2MjZjNmZiZTU0ZjlmZjIyY2YifSZkdXJhdGlvbj0mdGltZXN0YW1wPTE1NjY1MzEzODc=" data-loaded="true"></video>
+
 <a name="YM23x"></a>
 ### 自动补全
 
