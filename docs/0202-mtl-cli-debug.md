@@ -4,10 +4,10 @@
 ```
 mtl debug [ iOS | Android | WX | DD]
 ```
-<a name="android" class="anchor"></a >
 
+<a name="android" class="anchor"></a >
 ## android 调试 
-<a name="djD7U"></a>
+
 ### 概述
 - Android调试，指使用Android设备真机或者Android 网易模拟器 MuMu进行工程H5代码的调试；
 - 准备：Android设备真机或者Android 网易模拟器 MuMu，Chrome浏览器；
