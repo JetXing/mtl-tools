@@ -12,12 +12,19 @@ adb -s emulator-5554 shell
 ### iOS 调试 
 + iOS 需要搭建好xcode 开发环境；
 ### 微信小程序调试
-+ 微信小程序需要安装微信小程序工具：到微信公众平台去下载，[下载地址](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html)。
-命令行进行mtl debug wx 后 ，用微信小程序工具导入当前工程目录./output/wx/debug/proj  ，这样就可以在微信小程序工具下看到 修改app目录下工程源码的调试效果。
+
+执行指令：
+
+```shell
+$ mtl debug wx
+```
+
+打开"微信开发者工具"( [下载](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html) )，然后选择 `/项目根目录/output/wx/debug/proj` 导入项目。<br />![image.png](https://cdn.nlark.com/yuque/0/2019/png/271502/1566786933008-1674d79e-121c-4aee-a122-aaf4ab5ca2ff.png?x-oss-process=image/resize,w_1492)
+
 ### 钉钉小程序调试 
 
 + 钉钉小程序需要安装 蚂蚁金服开放平台 小程序工具，[下载地址](https://docs.alipay.com/mini/ide/download)。命令行进行mtl debug DD 后 ，用钉钉小程序工具导入当前工程目录./output/dd/debug/proj  ，这样就可以在钉钉小程序工具下看到 修改app目录下工程源码的调试效果。
- 
+
 
 ### debug 调试host配置和功能说明：
 + 配置pc的host 文件如下： 添加“ 127.0.0.1       mobile.yyuap.com ”  ；
