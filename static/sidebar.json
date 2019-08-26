@@ -78,7 +78,17 @@
         "快速开始": {
           "version": "5.0.0",
           "component": "0301-mtl-ide-quick-start",
-          "menus": {}
+          "menus": {
+            "0NUOn":"获取VS Code",
+            "vU40y":"安装运行环境",
+            "1LXZd":"安装MTL插件",
+            "sXYc9":"创建工程",
+             "PM5cG":"添加页面",
+            "g71sn":"调试",
+            "N5n1m":"预览",
+            "4Uvog":"打包",
+            "MWrbf":"MTL IDE功能说明"
+          }
         },
         "MTL-IDE可以做什么": {
           "version": "5.0.0",
