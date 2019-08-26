@@ -25,12 +25,12 @@
         "调试": {
           "version": "5.0.0",
           "component": "0202-mtl-cli-debug",
-          "menus": {}
-        },
-        "钉钉调试": {
-          "version": "5.0.0",
-          "component": "0202-mtl-cli-dd-debug",
-          "menus": {}
+          "menus": {
+            "android":"Android调试",
+            "ios":"iOS调试",
+            "wx":"微信小程序调试",
+            "dd":"钉钉小程序调试"
+          }
         },
         "预览": {
           "version": "5.0.0",

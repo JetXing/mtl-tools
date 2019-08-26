@@ -37,7 +37,7 @@ npm -g install mtl-cli
 ```
 mtl --version   //查看版本号
 ```
-<a name="创建工程" class="anchor"></a >
+<a name="创建工程" class="anchor"></a>
 
 ### 创建工程
 
@@ -101,7 +101,7 @@ mtl debug [ iOS | Android | WX | DD]
 <a name="android 调试" class="anchor"></a >
 
 ### android 调试 
-+ android 平台需要配置好 android开发环境 adb工具（adb 工具可以到开发中心下载）。安装android 模拟器 ，例如 网易模拟器 nunu  ，确保adb 连接通 。
++ android 平台需要配置好 android开发环境 adb工具（adb 工具可以到开发中心下载）。安装android 模拟器 ，例如 网易模拟器 MuMu  ，确保adb 连接通 。
 
 <a name="iOS 调试" class="anchor"></a >
 
