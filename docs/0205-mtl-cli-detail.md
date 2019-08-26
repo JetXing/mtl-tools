@@ -16,18 +16,21 @@ mtl create [appname]
 appname 是工程名称
 +  此参数是必填项。参数不能是特殊字符 ，长度不要超过64。例如mtl-demo、mtl@……%demo 这样的工程命名都是不对的；
 +  本地已创建的工程不能同名再创建，造成本地目录同名；
-
++  如果工程创建成功后  ，请务必先进入到工程跟目录下  ，例如 cd  “创建的工程名”
 命令交互中，选择需要的样版工程
 +  ：一个空的MTL工程 。
 +  : 一个MTL demo工程 ，涉及原生交互的一些功能。
 
+####  注意
 ```
-注意： 如果 mac 在创建工程结束的时候报错“Error: EACCES: permission denied” ，这个可能是 安装 express 没有权限导致 。
+如果 mac 在创建工程结束的时候报错“Error: EACCES: permission denied” ，这个可能是 安装 express 没有权限导致 。
 解决方法 ：
 1）、进入到你创建的**工程目录** 下 ，执行：sudo npm --save install express ，等待安装包执行完成后就可以了。
 2）、修改你的workspace 目录操作权限，指令： sudo chmod -R 777 workspace 的文件夹目录。
 
 如果在win上同样出现权限的报错，请查询win修改权限相关的操作。
+如果在win上出现“no such file or directory...” ,说明git clone 失败，请查询
+git的环境变量是否已经配置好。
 ```
 
 <a name="工程配置文件" class="anchor"></a >
