@@ -17,6 +17,6 @@ PUB_KEY | AI平台对应公钥 | 是
 ### 功能（[详细API](http://mtlapidocs201908061404.test.app.yyuap.com/0303-face-api)）
 方法 | 功能
 ---|---
-faceRegister | 人脸注册
-faceVerify | 人脸识别
+faceRegister | 为指定用户创建人脸信息。
+faceVerify | 验证人脸是否指定用户
 
