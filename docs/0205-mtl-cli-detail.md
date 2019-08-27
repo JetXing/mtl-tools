@@ -73,7 +73,11 @@ project.json文件 是工程配置文件，工程的信息以及各个端需要�
             "isScreenEdge": false,
             "color": "",
             "isStatusBarDefault": true
-            }
+            },
+        "serviceUrl" : {
+            "uploadUrl" : "https://mdoctor.yonyoucloud.com/mtldebugger/mtl/file/uploadToOSS",
+            "downloadUrl" : "https://mdoctor.yonyoucloud.com/mtldebugger/mtl/stream/download"
+        }
     }
 }
 ```
@@ -103,7 +107,12 @@ project.json文件 是工程配置文件，工程的信息以及各个端需要�
 	2、showStatusBar为NO时，隐藏状态栏时 isScreenEdge默认为YES;
     3、color #000000 为16进制值
 	```
++ serviceUrl ：配置上传、下载地址
 
+    ```
+    uploadUrl：上传地址
+    downloadUrl：下载地址
+    ```
 
 
 ### 设置android包名

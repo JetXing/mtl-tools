@@ -1,24 +1,18 @@
-# MTL-IDE可以做什么
 
-<a name="HDRKA"></a>
-### 界面创建mtl工程
-查看  mtl-ide详细文档 -  新建工程
-<a name="DZxpq"></a>
-### 界面添加页面模板
-查看  mtl-ide详细文档 - 添加页面
-<a name="k1sAe"></a>
-### 快速查看使用mtl-api
-查看  mtl-ide详细文档 - mtl-api快速预览使用<br />查看  mtl-ide详细文档 -代码编辑
-<a name="wJHBk"></a>
-### 自动化执行脚本
+# 百度定位功能(安卓使用)
+插件名称: mtl-plugin-bdlocation
+### 简介
+> 百度地图Android定位SDK是为Android移动端应用提供的一套简单易用的定位服务接口，专注于为广大开发者提供最好的综合定位服务。通过使用百度定位SDK，开发者可以轻松为应用程序实现智能、精准、高效的定位功能。
 
-- 预览
-- 打包
-- 调试
-- 发布
+> 为应用提供定位服务，并且可以跳转到百度地图、高德地图等APP，实现出行路线的规划。
+### 参数说明
+参数 | 说明 | 是否必传
+---|---|---
+BDMAP_KEY_ANDROID | Android平台百度定位mapKey | 是
 
-查看  mtl-ide详细文档 --script 脚本区
-<a name="ZZGe7"></a>
-### 修改配置文件
-待更新
+### 功能（[详细API](http://mtlapidocs201908061404.test.app.yyuap.com/0205-location-api)）
+方法 | 功能
+---|---
+getLocation | 获取当前坐标
+openLocation | 打开地图查看指定坐标位置
 

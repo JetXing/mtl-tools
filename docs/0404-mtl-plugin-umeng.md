@@ -1,24 +1,24 @@
-# MTL-IDE可以做什么
 
-<a name="HDRKA"></a>
-### 界面创建mtl工程
-查看  mtl-ide详细文档 -  新建工程
-<a name="DZxpq"></a>
-### 界面添加页面模板
-查看  mtl-ide详细文档 - 添加页面
-<a name="k1sAe"></a>
-### 快速查看使用mtl-api
-查看  mtl-ide详细文档 - mtl-api快速预览使用<br />查看  mtl-ide详细文档 -代码编辑
-<a name="wJHBk"></a>
-### 自动化执行脚本
+# 友盟分享(微信、钉钉)
+插件名称: mtl-plugin-umeng
+### 简介
+> 帮助应用快速具备国内外多平台分享功能，助力产品推广；
 
-- 预览
-- 打包
-- 调试
-- 发布
+> 提供了标准的分享平台菜单模板，你可以微调甚至完全自由定制；
 
-查看  mtl-ide详细文档 --script 脚本区
-<a name="ZZGe7"></a>
-### 修改配置文件
-待更新
+> 暂时只支持微信、微信朋友圈、钉钉。
 
+### 参数说明
+参数 | 说明 | 是否必传
+---|---|---
+WEXIN-APPKEY | 微信appKey | 是
+WEXIN-SECRET | 微信appSecret | 是
+DING-APPKEY | 钉钉appKey | 是
+UMENG-APPKEY | 友盟appKey | 是
+
+### 功能（详细API(暂无)）
+方法 | 功能
+---|---
+init | 初始化
+doShare | 分享
+openShare | 分享面板

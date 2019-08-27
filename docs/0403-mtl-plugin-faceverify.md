@@ -1,24 +1,22 @@
-# MTL-IDE可以做什么
 
-<a name="HDRKA"></a>
-### 界面创建mtl工程
-查看  mtl-ide详细文档 -  新建工程
-<a name="DZxpq"></a>
-### 界面添加页面模板
-查看  mtl-ide详细文档 - 添加页面
-<a name="k1sAe"></a>
-### 快速查看使用mtl-api
-查看  mtl-ide详细文档 - mtl-api快速预览使用<br />查看  mtl-ide详细文档 -代码编辑
-<a name="wJHBk"></a>
-### 自动化执行脚本
+# 人脸识别
+插件名称: mtl-plugin-faceverify
+### 简介
+> 基于百度深度学习能力的人脸识别技术，提供人脸检测与属性分析、检测等能力;
 
-- 预览
-- 打包
-- 调试
-- 发布
+> 通过集成SDK实现人脸识别功能的快速实现, 实现注册、识别等功能。
 
-查看  mtl-ide详细文档 --script 脚本区
-<a name="ZZGe7"></a>
-### 修改配置文件
-待更新
+### 参数说明
+参数 | 说明 | 是否必传
+---|---|---
+LICENSEID_IOS | 百度授权licenseID，ios平台使用 | 是
+LICENSEID_ANDROID | 百度授权licenseID,安卓平台使用 | 是
+BASE_URL | AI平台路径 | 是
+PUB_KEY | AI平台对应公钥 | 是
+
+### 功能（[详细API](http://mtlapidocs201908061404.test.app.yyuap.com/0303-face-api)）
+方法 | 功能
+---|---
+faceRegister | 人脸注册
+faceVerify | 人脸识别
 
