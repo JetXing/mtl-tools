@@ -68,6 +68,7 @@
       }
     }
   },
+  
   "IDE": {
     "version": "5.0.0",
     "component": "gjtx",
@@ -114,6 +115,39 @@
           "menus": {
             "oNuib": "界面"
           }
+        }
+      }
+    }
+  },
+  "插件说明文档": {
+    "version": "5.0.0",
+    "component": "gjtx",
+    "children": {
+      "":{
+        "多端协同":{
+          "version":"5.0.0",
+          "component":"0401-mtl-plugin-mulTerminal",
+          "menu":{}
+        },
+        "小友智能":{
+          "version":"5.0.0",
+          "component":"0402-mtl-plugin-vui",
+          "menu":{}
+        },
+        "人脸识别":{
+          "version":"5.0.0",
+          "component":"0403-mtl-plugin-faceverify",
+          "menu":{}
+        },
+        "友盟分享":{
+          "version":"5.0.0",
+          "component":"0404-mtl-plugin-umeng",
+          "menu":{}
+        },
+        "百度定位":{
+          "version":"5.0.0",
+          "component":"0405-mtl-plugin-bdlocation",
+          "menu":{}
         }
       }
     }
