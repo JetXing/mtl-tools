@@ -7,11 +7,11 @@ mtl preview [ iOS | Android | WX | DD |Upesn]
 ```
 
 ### android预览说明：
-+ 命令行执行预览android功能 ，需要用真机预先安装"android预览APP" （预览APP在下载中心中下载安装）。在真机安装后，打开预览APP的扫码功能  ，扫码识别后 ，就可以验证项目开发的真机预览功能。
++ 命令行执行预览android功能 ，需要用真机预先安装"android预览APP" （预览APP在下载中心[MTL-JSAPI-原生预览工具-Android预览工具](http://mobile.yyuap.com/mtl/download/)中下载安装）。在真机安装后，打开预览APP的扫码功能  ，扫码识别后 ，就可以验证项目开发的真机预览功能。
 
 
 ### iOS 预览说明：
-+ 命令行执行预览iOS功能 ，需要用真机预先安装"iOS预览APP" （预览APP在下载中心中下载安装）。在真机安装后，打开预览APP的扫码功能  ，扫码识别后 ，就可以验证项目开发的真机预览功能。
++ 命令行执行预览iOS功能 ，需要用真机预先安装"iOS预览APP" （预览APP在下载中心[MTL-JSAPI-原生预览工具-iOS预览工具](http://mobile.yyuap.com/mtl/download/)中下载安装）。在真机安装后，打开预览APP的扫码功能  ，扫码识别后 ，就可以验证项目开发的真机预览功能。
 
 
 ### 微信小程序预览说明：
