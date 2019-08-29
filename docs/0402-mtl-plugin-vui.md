@@ -11,7 +11,7 @@ APPID | 百度语音识别服务APPID | 是
 APIKEY | 百度语音识别服务ApiKey | 是
 SECRETKEY | 百度语音识别服务SecretKey | 是
 
-### 功能（详细API(暂无)）
+### 功能（[详细API](http://mtlapidocs201908061404.test.app.yyuap.com/0701-vui-api)）
 方法 | 功能
 ---|---
 initSpeech | VUI初始化
