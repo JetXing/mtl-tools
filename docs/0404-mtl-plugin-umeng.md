@@ -16,7 +16,7 @@ WEXIN-SECRET | 微信appSecret | 是
 DING-APPKEY | 钉钉appKey | 是
 UMENG-APPKEY | 友盟appKey | 是
 
-### 功能（详细API(暂无)）
+### 功能（[详细API](http://mtlapidocs201908061404.test.app.yyuap.com/0801-umeng-api)）
 方法 | 功能
 ---|---
 init | 初始化
