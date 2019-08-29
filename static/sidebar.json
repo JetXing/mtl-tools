@@ -84,11 +84,6 @@
             "MWrbf": "MTL IDE功能说明"
           }
         },
-        "MTL-IDE可以做什么": {
-          "version": "5.0.0",
-          "component": "0301-mtl-ide-overview",
-          "menus": {}
-        },
         "调试": {
           "version": "5.0.0",
           "component": "0302-mtl-ide-debug",
