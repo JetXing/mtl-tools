@@ -4,7 +4,7 @@ MTL IDE是一款轻量级Web可视化开发工具，依托强大的vscode，不�
 
 <a name="0NUOn" class="anchor"></a>
 ## 1.获取VS Code
-Visual Studio Code（以下简称vscode）是一个**轻量且强大的跨平台开源**代码编辑器（IDE），支持Windows，OS X和Linux。内置JavaScript、TypeScript和Node.js支持，而且拥有丰富的插件生态系统。<br />vscode具有广泛的开发者受众基础，因此MTL IDE基于vscode平台进行开发。<br />[点击下载vscode](https://code.visualstudio.com)
+Visual Studio Code（以下简称vscode）是一个**轻量且强大的跨平台开源**代码编辑器（IDE），支持Windows，OS X和Linux。内置JavaScript、TypeScript和Node.js支持，而且拥有丰富的插件生态系统。<br />vscode具有广泛的开发者受众基础，因此MTL IDE基于vscode平台进行开发。<br />[点击下载vscode](https://code.visualstudio.com) （^1.36.0及以后的版本）
 
 <a name="vU40y" class="anchor"></a>
 ## 2.安装运行环境
