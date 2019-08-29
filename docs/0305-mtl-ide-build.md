@@ -8,7 +8,7 @@
 - 选择MTL SCRIPT
 - 打开build 点击build_android.js(Android为例)
 - 点击 箭头
-- 生成apk二维码手机扫码安装即可
+- 扫描工程根目录output文件夹下的二维码完成安装
 
 
 ![image.png](https://cdn.nlark.com/yuque/0/2019/png/271500/1566808495405-e46e5ede-8ac1-4dcd-9249-370168ed3527.png#align=left&display=inline&height=163&name=image.png&originHeight=359&originWidth=329&size=15675&status=done&width=149.5454513041442)
