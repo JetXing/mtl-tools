@@ -35,11 +35,11 @@
 
 ![image.png](https://cdn.nlark.com/yuque/0/2019/png/271483/1567147906860-1b24f5a9-f1d3-4e67-bdcd-45fb021ed1e5.png#align=left&display=inline&height=770&name=image.png&originHeight=1540&originWidth=2650&size=364153&status=done&width=1325)
 
-- 填写应用信息，SHA1值（创建应用页面有获取帮助，按着操作）和包名
+- 填写应用信息，SHA1值（创建应用页面有获取帮助，按步骤操作）和包名
 - 应用创建完成点开“查看应用”，获取接口参数 BDMAP_KEY_ANDROID
 
 ![image.png](https://cdn.nlark.com/yuque/0/2019/png/271483/1567148429545-9f71192f-e6dd-4cc5-b2e7-7176f34f7f9f.png#align=left&display=inline&height=797&name=image.png&originHeight=1594&originWidth=2600&size=333398&status=done&width=1300)
 
 <a name="x9iBG"></a>
 #### 参数生效须知
-由于SHA1值和应用签名文件有关，需要在打包服务器上传自己的打包keystore文件。暂时由我们的开发人员（zhengwbd@yonyou.com）进行上传，需提供打包keystore文件密码及报名等。
+由于SHA1值和应用签名文件有关，需要在打包服务器上传自己的打包keystore文件。暂时由我们的开发人员（zhengwbd@yonyou.com）进行上传，需提供打包keystore文件密码及包名等。
