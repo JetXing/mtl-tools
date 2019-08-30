@@ -10,8 +10,8 @@ mtl debug [ iOS | Android | WX | DD]
 
 ### 概述
 - Android调试，指使用Android设备真机或者Android 网易模拟器 MuMu进行工程H5代码的调试；
-- 准备：Android设备真机或者Android 网易模拟器 MuMu，Chrome浏览器；
-- 调试期间开发者只需在Chrome浏览器中，跟踪到自己写的调用方法是否调用，回调方法是否响应，然后在代码按步骤跟踪自己的代码罗辑。
+- 准备：Android设备真机或者Android 网易模拟器 MuMu，pc端安装Chrome浏览器；
+- 调试期间，开发者可在Chrome浏览器中跟踪方法是否调用；回调方法是否响应；代码罗辑是否正确等。
 
 
 ###  网易模拟器 MuMu 调试步骤
@@ -19,7 +19,7 @@ mtl debug [ iOS | Android | WX | DD]
 - 在电脑终端命令行进入已创建的工程目录（创建工程文档见：[链接](http://mtltoolsdocs20190806.test.app.yyuap.com/0201-mtl-cli-quick-start#%E5%88%9B%E5%BB%BA%E5%B7%A5%E7%A8%8B)）
 - Windows电脑输入：adb connect 127.0.0.1:7555，mac电脑输入：adb connect 127.0.0.1:5555 ，链接网易模拟器 MuMu
 - 输入：mtl d android，应用会自动运行到模拟器
-- 打开Chrome浏览器，地址栏录入地址：[chrome://inspect/#devices]()
+- pc端打开Chrome浏览器，地址栏录入地址：[chrome://inspect/#devices]()
 
 ![debug1.png](https://cdn.nlark.com/yuque/0/2019/png/271483/1566790595694-6493e60b-fdab-42e3-810b-636a1337fda6.png#align=left&display=inline&height=1240&name=debug1.png&originHeight=1240&originWidth=1982&size=174735&status=done&width=1982)
 
@@ -36,7 +36,7 @@ mtl debug [ iOS | Android | WX | DD]
 - 在电脑终端命令行进入已创建的工程目录（创建工程文档见：[链接](http://mtltoolsdocs20190806.test.app.yyuap.com/0201-mtl-cli-quick-start#%E5%88%9B%E5%BB%BA%E5%B7%A5%E7%A8%8B)）
 - 输入：mtl b android，打包工程
 - 数据线连接真机设备，电脑命令输入：mtl start，应用会自动运行到真机上面
-- 打开Chrome浏览器，地址栏录入地址：[chrome://inspect/#devices]()
+- pc端打开Chrome浏览器，地址栏录入地址：[chrome://inspect/#devices]()
 
 ![debug3.png](https://cdn.nlark.com/yuque/0/2019/png/271483/1566791242513-25821ce9-204e-44ab-96e4-a8882d5a3ddc.png#align=left&display=inline&height=1322&name=debug3.png&originHeight=1322&originWidth=1854&size=212105&status=done&width=1854)
 
