@@ -11,7 +11,7 @@ mtl debug [ iOS | Android | WX | DD]
 ### 概述
 - Android调试，指使用Android设备真机或者Android 网易模拟器 MuMu进行工程H5代码的调试；
 - 准备：Android设备真机或者Android 网易模拟器 MuMu，pc端安装Chrome浏览器；
-- 调试期间，开发者可在Chrome浏览器中跟踪方法是否调用；回调方法是否响应；代码罗辑是否正确等。
+- 调试期间，开发者可在Chrome浏览器中跟踪方法是否调用；回调方法是否响应；代码逻辑是否正确等。
 
 
 ###  网易模拟器 MuMu 调试步骤
