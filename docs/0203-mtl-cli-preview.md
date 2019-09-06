@@ -24,7 +24,29 @@ $ mtl preview wx
 
 指令完成后会生成一个二维码，使用手机"微信"的"扫一扫"功能识别二维码即可预览项目在微信上的运行效果。
 
-### 钉钉小程序预览(暂不支持)
+### 钉钉小程序预览
+
+> 使用钉钉端预览模式需要加入企业，自建应用只有企业员工可以使用，下面是使用步骤：
+
+
+- 扫描企业团队的二维码：<br />
+
+
+![image.png](https://cdn.nlark.com/yuque/0/2019/png/238629/1567749538045-adf1fe44-8ea0-4117-9c39-8aaa2d76a879.png#align=left&display=inline&height=938&name=image.png&originHeight=938&originWidth=670&size=112266&status=done&width=670)<br />
+<br />
+
+- 扫描以后等待管理员批准加入以后，在手机端钉钉-工作页面-左上角切换<北京MTL>
+
+
+<br />![image.png](https://cdn.nlark.com/yuque/0/2019/png/238629/1567749715591-705a9b90-9928-4108-ae39-16f6950b6a37.png#align=left&display=inline&height=915&name=image.png&originHeight=915&originWidth=526&size=123688&status=done&width=526)<br />
+<br />
+
+- 切换到本企业团队以后，下拉查看其他应用-MTL演示：<br />
+
+![image.png](https://cdn.nlark.com/yuque/0/2019/png/238629/1567749828509-310dfcba-56e6-4d5f-bb9f-91807591d8f4.png#align=left&display=inline&height=909&name=image.png&originHeight=909&originWidth=520&size=122621&status=done&width=520)<br />
+<br />
+
+- 打开MTL演示应用的扫码功能 ，扫码识别后 ，就可以验证项目开发的真机预览功能。
 
 
 ### 友空间预览说明：
