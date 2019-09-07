@@ -50,13 +50,13 @@ mtl debug [ iOS | Android | WX | DD]
 
 ## iOS 调试 
 + iOS 需要搭建好xcode 开发环境；
-#### 提示： 目前iOS仅支持模拟器调试。
+#### 提示： 目前iOS仅支持模拟器调试(模拟器调试，需要苹果系统的电脑，下载[Xcode](https://apps.apple.com/cn/app/xcode/id497799835?mt=12))。
 
 #### 使用Safari浏览器调试WebView
 
 使用Safari浏览器调试WebView比较简单无需过多的程序配置,只需点击几个开关按钮即可.
 
-首先打开模拟器或者真机设置中"Safari浏览器"→"高级"→"Web检查器"的开关 如下图所示.
+首先打开模拟器设置中"Safari浏览器"→"高级"→"Web检查器"的开关 如下图所示.
 
 ![WechatIMG1.jpeg](https://cdn.nlark.com/yuque/0/2019/jpeg/271511/1566799469597-7cbdd9ee-60fa-4e5f-9d62-4e774d43aae4.jpeg#align=left&display=inline&height=500&name=WechatIMG1.jpeg&originHeight=500&originWidth=1000&size=92724&status=done&width=1000)
 
@@ -70,7 +70,7 @@ mtl debug [ iOS | Android | WX | DD]
 ![WechatIMG4.png](https://cdn.nlark.com/yuque/0/2019/png/271511/1566799717027-0e7459da-0623-4f2b-9801-c78f4b25e756.png#align=left&display=inline&height=912&name=WechatIMG4.png&originHeight=912&originWidth=1494&size=218341&status=done&width=1494)
 
 
-这时候真机连接上数据线.或者开启模拟器就能在菜单栏"开发"选项中找到我们的设备或者是模拟器.
+这时候开启模拟器就能在菜单栏"开发"选项中找到我们的模拟器.
 
 
 ![WechatIMG6.png](https://cdn.nlark.com/yuque/0/2019/png/271511/1566799945966-4f6be8c4-e92b-4663-a677-ed10beba624c.png#align=left&display=inline&height=1366&name=WechatIMG6.png&originHeight=1366&originWidth=1384&size=2926053&status=done&width=1384)
