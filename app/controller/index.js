@@ -90,7 +90,7 @@ module.exports = {
     let rightMenus = {}; //右侧菜单
     let changeLog = []; //组件更新日志
 
-    console.log('components', components)
+    
     if (component.indexOf('bee') != -1) {
       rightMenus = components[component].menus;
       changeLog = components[component].changeLog;
@@ -164,7 +164,6 @@ module.exports = {
     data = data
       .replace(/\<table/gi, '<div class="table-container">\n<table')
       .replace(/<\/table>/gi, "</table>\n</div>\n");
-      console.log('渲染后2：', data);
 
       
     // let latestVersion = sidebar['更新日志']['version'];

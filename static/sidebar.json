@@ -117,12 +117,17 @@
         "多端协同":{
           "version":"5.0.0",
           "component":"0401-mtl-plugin-mulTerminal",
-          "menu":{}
+          "menus":{
+            "EsvaX": "简介",
+            "yhKAg": "集成准备",
+            "BOB0s": "开始使用",
+            "JfY93": "推送消息至客户端"
+          }
         },
         "IM推送":{
           "version":"5.0.0",
           "component":"0406-mtl-plugin-imPush",
-          "menu":{
+          "menus":{
             "EsvaX": "简介",
             "yhKAg": "集成准备",
             "BOB0s": "开始使用",
@@ -132,22 +137,22 @@
         "小友智能":{
           "version":"5.0.0",
           "component":"0402-mtl-plugin-vui",
-          "menu":{}
+          "menus":{}
         },
         "人脸识别":{
           "version":"5.0.0",
           "component":"0403-mtl-plugin-faceverify",
-          "menu":{}
+          "menus":{}
         },
         "友盟分享":{
           "version":"5.0.0",
           "component":"0404-mtl-plugin-umeng",
-          "menu":{}
+          "menus":{}
         },
         "百度定位":{
           "version":"5.0.0",
           "component":"0405-mtl-plugin-bdlocation",
-          "menu":{}
+          "menus":{}
         }
       }
     }
