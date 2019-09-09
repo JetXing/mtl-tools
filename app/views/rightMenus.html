@@ -1,6 +1,5 @@
 <div id="rightMenusId">
     <ul class="rm-list">
-        <% console.log('rightMenus', rightMenus) %>
         <% for(key in rightMenus) { var item = rightMenus[key];  %>
             <li class="rm-list-item" name="#<%= key %>"> 
                 <a class="rm-list-item-a" href="#<%= key %>" title="<%= key %>"><%= item %></a>
