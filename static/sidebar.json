@@ -119,6 +119,16 @@
           "component":"0401-mtl-plugin-mulTerminal",
           "menu":{}
         },
+        "IM推送":{
+          "version":"5.0.0",
+          "component":"0406-mtl-plugin-imPush",
+          "menu":{
+            "EsvaX": "简介",
+            "yhKAg": "集成准备",
+            "BOB0s": "开始使用",
+            "JfY93": "推送消息至客户端"
+          }
+        },
         "小友智能":{
           "version":"5.0.0",
           "component":"0402-mtl-plugin-vui",

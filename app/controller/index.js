@@ -90,6 +90,7 @@ module.exports = {
     let rightMenus = {}; //右侧菜单
     let changeLog = []; //组件更新日志
 
+    console.log('components', components)
     if (component.indexOf('bee') != -1) {
       rightMenus = components[component].menus;
       changeLog = components[component].changeLog;
@@ -157,9 +158,9 @@ module.exports = {
       filePath = path.join(__dirname, `../../docs/${component}.md`);
       data = await fs.readFileSync(filePath, 'utf-8');
     }
-    console.log('渲染前：', data);
+
     data = marked(data);
-    console.log('渲染后1：', data);
+
     data = data
       .replace(/\<table/gi, '<div class="table-container">\n<table')
       .replace(/<\/table>/gi, "</table>\n</div>\n");
