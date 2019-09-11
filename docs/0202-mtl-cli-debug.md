@@ -151,7 +151,7 @@ $ mtl debug wx
 
 <a name="gqXqI"></a>
 ### 本地真机调试
-如果本地的html静态资源在本地，需要使用[内网穿透](https://ding-doc.dingtalk.com/doc#/kn6zg7/hb7000)功能，实现真机访问电脑端的localhost
+如果本地的html静态资源在本地，需要使用[内网穿透](https://ding-doc.dingtalk.com/doc#/kn6zg7/hb7000)功能，实现真机访问电脑端的localhost，内网穿透文档中只有Mac的实例，如果使用的是windows电脑，执行命令的方式为`ding -config=./ding.cfg -subdomain=jetyonyou 3000`
 
 <a name="WDhrU"></a>
 #### 配置地址，同时配置到钉钉后台的安全域名
