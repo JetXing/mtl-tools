@@ -1,62 +1,64 @@
 <div>
     <ul class="menu-components">
         <% for (key in sidebar){ var title = sidebar[key]; %>
-            <li class="menu-group">
-                <% if(title.children){ var child = title.children; %>
-                    <div class="menu-item menu-item-components open" data-isComponent="<%= title.component %>">
-                        <span class="menu-item-components-text <%= title.component %>" name="<%= title.component %>">
-                            <%= key %>
-                        </span>
-                        <% for (heard in child) { var acs = child[heard]; %>
-                            <div class="menu-item-heard">
-                                <%= heard %>
-                                    <% for (com in acs) { %>
-                                        <% if(acs[com].component == active) {%>
-                                            <div class="menu-item-com active" id="<%= acs[com].component %>">
-                                                <% if(newComponent.indexOf(acs[com].component)!=-1) {%>
-                                                    <a href="./<%= acs[com].component %>" class="doit-before" comp="<%= acs[com].component %>" title="<%= com %>">
-                                                        <%= com %>
-                                                    </a>
-                                                    <%} else {%>
-                                                        <a href="./<%= acs[com].component %>" title="<%= com %>">
-                                                            <%= com %>
-                                                        </a>
-                                                        <% } %>
-                                            </div>
-                                            <%} else {%>
-                                                <div class="menu-item-com" id="<%= acs[com].component %>">
-                                                    <% if(newComponent.indexOf(acs[com].component)!=-1) {%>
-                                                        <a href="./<%= acs[com].component %>" class="doit-before" comp="<%= acs[com].component %>" title="<%= com %>">
-                                                            <%= com %>
-                                                        </a>
-                                                        <%} else {%>
-                                                            <a href="./<%= acs[com].component %>" title="<%= com %>">
-                                                                <%= com %>
-                                                            </a>
-                                                            <% } %>
-                                                </div>
-                                                <% } %>
-                                                    <% } %>
-                            </div>
-                            <% } %>
+        <li class="menu-group">
+            <% if(title.children){ var child = title.children; %>
+            <div class="menu-item menu-item-components open" data-isComponent="<%= title.component %>">
+                <span class="menu-item-components-text <%= title.component %>" name="<%= title.component %>">
+                    <%= key %>
+                </span>
+                <% for (heard in child) { var acs = child[heard]; %>
+                <div class="menu-item-heard">
+                    <%= heard %>
+                    <% for (com in acs) { %>
+                    <% if(acs[com].component == active) {%>
+                    <div class="menu-item-com active" id="<%= acs[com].component %>">
+                        <% if(newComponent.indexOf(acs[com].component)!=-1) {%>
+                        <a href="./<%= acs[com].component %>" class="doit-before" comp="<%= acs[com].component %>"
+                            title="<%= com %>">
+                            <%= com %>
+                        </a>
+                        <%} else {%>
+                        <a href="./<%= acs[com].component %>" title="<%= com %>">
+                            <%= com %>
+                        </a>
+                        <% } %>
                     </div>
-                    <% } else { %>
-                        <% if(sidebar[key].component==active){ %>
-                            <div class="menu-item active" id="<%= sidebar[key].component %>">
-                                <a href="./<%= sidebar[key].component %>" title="<%= key %>">
-                                    <%= key %>
-                                </a>
-                            </div>
-                            <% } else { %>
-                                <div class="menu-item" id="<%= sidebar[key].component %>">
-                                    <a href="./<%= sidebar[key].component %>" title="<%= key %>">
-                                        <%= key %>
-                                    </a>
-                                </div>
-                                <% } %>
-                                    <% } %>
-            </li>
+                    <%} else {%>
+                    <div class="menu-item-com" id="<%= acs[com].component %>">
+                        <% if(newComponent.indexOf(acs[com].component)!=-1) {%>
+                        <a href="./<%= acs[com].component %>" class="doit-before" comp="<%= acs[com].component %>"
+                            title="<%= com %>">
+                            <%= com %>
+                        </a>
+                        <%} else {%>
+                        <a href="./<%= acs[com].component %>" title="<%= com %>">
+                            <%= com %>
+                        </a>
+                        <% } %>
+                    </div>
+                    <% } %>
+                    <% } %>
+                </div>
+                <% } %>
+            </div>
+            <% } else { %>
+            <% if(sidebar[key].component==active){ %>
+            <div class="menu-item active" id="<%= sidebar[key].component %>">
+                <a href="./<%= sidebar[key].component %>" title="<%= key %>">
+                    <%= key %>
+                </a>
+            </div>
+            <% } else { %>
+            <div class="menu-item" id="<%= sidebar[key].component %>">
+                <a href="./<%= sidebar[key].component %>" title="<%= key %>">
+                    <%= key %>
+                </a>
+            </div>
             <% } %>
+            <% } %>
+        </li>
+        <% } %>
     </ul>
 </div>
 
@@ -66,6 +68,7 @@
     let nodeList = document.querySelectorAll('.menu-item-components-text');
     nodeList.forEach((item, index) => {
         let name = item.getAttribute('name');
+        console.log('node-name', name);
         item.onclick = (e) => {
             let outDiv = document.querySelectorAll('.menu-item-components')[index]
             let cls = outDiv.getAttribute('class');
@@ -80,14 +83,22 @@
     })
 
     //初始化展开关闭
-    let gjtxOpen = sessionStorage.getItem('gjtxOpen'); //关键特性
-    let zjOpen = sessionStorage.getItem('zjOpen'); //组件
+    let terminalModule = sessionStorage.getItem('terminal-moduleOpen');
+    let ideModule = sessionStorage.getItem('ide-moduleOpen');
+    let advanceTopicsModule = sessionStorage.getItem('advance-topics-moduleOpen');
     let titls = document.querySelectorAll('.menu-item-components')
-    if (gjtxOpen == 'false') { //
+    console.log('terminalModule', terminalModule)
+    console.log('ideModule', ideModule)
+    console.log('advanceTopicsModule', advanceTopicsModule)
+    console.log('titls', titls);
+    if (terminalModule == 'false') { //
         titls[0].setAttribute('class', 'menu-item menu-item-components')
     }
-    if (zjOpen == 'false') {
+    if (ideModule == 'false') { //
         titls[1].setAttribute('class', 'menu-item menu-item-components')
+    }
+    if (advanceTopicsModule == 'false') { //
+        titls[2].setAttribute('class', 'menu-item menu-item-components')
     }
 
 
@@ -106,21 +117,24 @@
     // 点击红点
     function localStorageSet(key, value) {
         var curTime = new Date().getTime();
-        localStorage.setItem(key,JSON.stringify({data:value,time:curTime}));
+        localStorage.setItem(key, JSON.stringify({
+            data: value,
+            time: curTime
+        }));
     }
     /*
      * get 获取方法
      * @ param {String} 	key 键
      */
-    function localStorageGet(key,expired) {
+    function localStorageGet(key, expired) {
         var data = localStorage.getItem(key);
-        if(!data){
+        if (!data) {
             return false;
         }
         var dataObj = JSON.parse(data);
-        if (new Date().getTime() - dataObj.time>1000*60*60*24*7) {
-            localStorage.setItem(key,'')
-        }else{
+        if (new Date().getTime() - dataObj.time > 1000 * 60 * 60 * 24 * 7) {
+            localStorage.setItem(key, '')
+        } else {
             return dataObj.data;
         }
     }
@@ -145,7 +159,7 @@
                 item.setAttribute('class', '');
                 if (doitClicked.indexOf(com) == -1) {
                     doitClicked.push(com)
-                    localStorageSet('doitClicked',doitClicked);
+                    localStorageSet('doitClicked', doitClicked);
                 }
             }
         }

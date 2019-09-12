@@ -1,7 +1,6 @@
 # MTL-IDE使用文档
 
-
-<a name="oNuib" class="anchor"></a>
+<a name="oNuib"></a>
 # 界面
 <a name="DHL2F"></a>
 ### 安装MTL组件
@@ -11,30 +10,15 @@
 - 搜索MTL
 - 点击安装
 
-![image.png](https://cdn.nlark.com/yuque/0/2019/png/271500/1566010605575-9983cdc0-73e3-4426-a38c-bedf622c5ffa.png#align=left&display=inline&height=487&name=image.png&originHeight=536&originWidth=952&size=64783&status=done&width=865.4545266963238)
 <a name="bsAY5"></a>
 ### MTL Workspace
-安装成功后会出现MTL 工作区 点击进入<br />![image.png](https://cdn.nlark.com/yuque/0/2019/png/271500/1566355468266-2ae82d50-5ef8-43c6-a796-1d6fdbc5bc99.png#align=left&display=inline&height=489&name=image.png&originHeight=538&originWidth=574&size=71280&status=done&width=521.8181705080775)
-<a name="tsZtH"></a>
-### 新建项目
-
-- 选择mtl工作区
-- 点击创建工程（当前当前工作空间为空时(vscode没有打开任何项目)，会自动打开操作区域，未自动打开，在[目录文件区](#87vl8)-点击 --新建按钮--创建工程 ）
-- 选择工程名称、目录
-- 点击创建完成后会自动打开
-<a name="TKnEM"></a>
+安装成功后会出现MTL 工作区 点击进入<br />![image.png](https://cdn.nlark.com/yuque/0/2019/png/271500/1566807859892-c388eabe-c9b3-4049-886e-0629e0061763.png#align=left&display=inline&height=341&name=image.png&originHeight=751&originWidth=638&size=65925&status=done&width=289.9999937144194)
+<a name="lgQfj"></a>
+### 创建工程
+MTL工作区，如图所示:<br />![image.png](https://cdn.nlark.com/yuque/0/2019/png/271499/1566790491881-756462cb-71e5-40de-9caf-c3a8fb2b0dcf.png#align=left&display=inline&height=502&name=image.png&originHeight=1004&originWidth=1538&size=215761&status=done&width=769#align=left&display=inline&height=1004&originHeight=1004&originWidth=1538&status=done&width=1538)<br />(1).MTL工作区内，开发者可以创建工程，打开工程，添加页面，配置工程文件，查看帮助等。若工作区被关闭，可以点击目录区![image.png](https://cdn.nlark.com/yuque/0/2019/png/271499/1566548341740-9ec99b15-9832-44b0-a896-fb07c389cc71.png#align=left&display=inline&height=13&name=image.png&originHeight=26&originWidth=432&size=9452&status=done&width=216#align=left&display=inline&height=10&originHeight=26&originWidth=432&status=done&width=160)右上角的![image.png](https://cdn.nlark.com/yuque/0/2019/png/271499/1566548368080-dee9c8a1-1183-4c67-a578-8cb7249c58fb.png#align=left&display=inline&height=12&name=image.png&originHeight=24&originWidth=28&size=3655&status=done&width=14#align=left&display=inline&height=13&originHeight=24&originWidth=28&status=done&width=15)按钮重新打开工作区。<br />(2).选择创建工程，修改工程名，选择工程存放目录，选择模板，点击创建按钮，即可创建一个mtl工程。<br />(3).工程创建成功后，会自动打开所创建的工程。<br />(4).开发者根据各自的业务，开始编写代码。<br />[]()
+<a name="QFz3H"></a>
 ### 添加页面
-
-- 点击添加页面
-- 选择页面模板
-- 输入名称
-- 点击添加
-- 在[目录文件区](#87vl8)-点击 --刷新按钮
-
-<video preload="none" data-src="https://cloud.video.taobao.com/play/u/271500/p/1/e/6/t/1/233947663317.mp4?auth_key=YXBwX2tleT04MDAwMDAwMTImYXV0aF9pbmZvPXsidGltZXN0YW1wRW5jcnlwdGVkIjoiN2Q5MWQxNTc2OTNlYTE2MjZjNmZiZTU0ZjlmZjIyY2YifSZkdXJhdGlvbj0mdGltZXN0YW1wPTE1NjY1MzEzODc=" webkit-playsinline="webkit-playsinline" playsinline="playsinline" class="lozad" poster="https://cdn.nlark.com/yuque/0/2019/jpeg/271500/1566012347833-06e260e4-6a81-4aff-9bf5-de2cdeeb372e.jpeg" controls="" controlslist="nodownload" src="https://cloud.video.taobao.com/play/u/271500/p/1/e/6/t/1/233947663317.mp4?auth_key=YXBwX2tleT04MDAwMDAwMTImYXV0aF9pbmZvPXsidGltZXN0YW1wRW5jcnlwdGVkIjoiN2Q5MWQxNTc2OTNlYTE2MjZjNmZiZTU0ZjlmZjIyY2YifSZkdXJhdGlvbj0mdGltZXN0YW1wPTE1NjY1MzEzODc=" data-loaded="true"></video>
-
-
-
+MTL IDE除了提供工程模板以为，还提供丰富的页面目标供开发者使用。如图所示:<br />![image.png](https://cdn.nlark.com/yuque/0/2019/png/271499/1566790981247-595984df-ff07-41a7-a581-3124fe8bd90d.png#align=left&display=inline&height=415&name=image.png&originHeight=830&originWidth=1524&size=149506&status=done&width=762#align=left&display=inline&height=830&originHeight=830&originWidth=1524&status=done&width=1524)<br />(1).在工作区内选择添加页面，添加页面名称->选择页面模板，点击添加，即可添加页面至工程目录内<br />(2).创建后的页面如下图所示:<br />![image.png](https://cdn.nlark.com/yuque/0/2019/png/271499/1566790837333-f7375f58-2d80-4c49-be60-c0df29396f4b.png#align=left&display=inline&height=235&name=image.png&originHeight=470&originWidth=436&size=40480&status=done&width=218#align=left&display=inline&height=470&originHeight=470&originWidth=436&status=done&width=436)<br />*若添加页面成功后，工程目录内没有显示，点击![image.png](https://cdn.nlark.com/yuque/0/2019/png/271499/1566790907341-818cde17-b019-4dda-91e2-567b354243bb.png#align=left&display=inline&height=13&name=image.png&originHeight=26&originWidth=30&size=4389&status=done&width=15#align=left&display=inline&height=13&originHeight=26&originWidth=30&status=done&width=15)刷新即可
 <a name="Jj9PK"></a>
 ### 
 <a name="87vl8"></a>
@@ -76,30 +60,29 @@
 
 - api目录结构
   - 点击查看
-  - 点击向右箭头插入 编辑文档的光标位置
+  - 点击向右箭头插入 编辑文档的光标位置![image.png](https://cdn.nlark.com/yuque/0/2019/png/271500/1566806473086-cd6836cb-c046-4a6d-81ea-2b312a7501a7.png#align=left&display=inline&height=17&name=image.png&originHeight=37&originWidth=316&size=4610&status=done&width=143.63636052312935)
   - 问号、会索引到官网查看详细文档
 
-![image.png](https://cdn.nlark.com/yuque/0/2019/png/271500/1566008956600-1f4bdf0f-16fb-4c8b-a4d8-b1e77633b7bd.png#align=left&display=inline&height=489&name=image.png&originHeight=538&originWidth=268&size=48082&status=done&width=243.63635835568778)
+
+![image.png](https://cdn.nlark.com/yuque/0/2019/png/271500/1566807921821-50cf1adb-b116-4be7-9dec-6972b22fff5b.png#align=left&display=inline&height=358&name=image.png&originHeight=788&originWidth=1147&size=150313&status=done&width=521.3636250633841)
 
 
 <a name="joBQm"></a>
 # 代码编辑
-<a name="mibVz"></a>
-### mtlAPI快速插入
 
-<video preload="none" data-src="https://cloud.video.taobao.com/play/u/271500/p/1/e/6/t/1/233946019348.mp4?auth_key=YXBwX2tleT04MDAwMDAwMTImYXV0aF9pbmZvPXsidGltZXN0YW1wRW5jcnlwdGVkIjoiN2Q5MWQxNTc2OTNlYTE2MjZjNmZiZTU0ZjlmZjIyY2YifSZkdXJhdGlvbj0mdGltZXN0YW1wPTE1NjY1MzEzODc=" webkit-playsinline="webkit-playsinline" playsinline="playsinline" class="lozad" poster="https://cdn.nlark.com/yuque/0/2019/jpeg/271500/1566012347882-c878d424-5ccd-4b8a-9162-ade8fb637de4.jpeg" controls="" controlslist="nodownload" src="https://cloud.video.taobao.com/play/u/271500/p/1/e/6/t/1/233946019348.mp4?auth_key=YXBwX2tleT04MDAwMDAwMTImYXV0aF9pbmZvPXsidGltZXN0YW1wRW5jcnlwdGVkIjoiN2Q5MWQxNTc2OTNlYTE2MjZjNmZiZTU0ZjlmZjIyY2YifSZkdXJhdGlvbj0mdGltZXN0YW1wPTE1NjY1MzEzODc=" data-loaded="true"></video>
+
 
 <a name="YM23x"></a>
 ### 自动补全
 
 <a name="yfv8U"></a>
 #### mtl.
-输入mtl. 会自动提示 mtl相关api<br />![image.png](https://cdn.nlark.com/yuque/0/2019/png/271500/1566355271676-c50d7a0e-a323-448f-9cfc-fc814ebadc80.png#align=left&display=inline&height=324&name=image.png&originHeight=356&originWidth=949&size=65603&status=done&width=862.7272540281631)
+输入mtl. 会自动提示 mtl相关api<br />![image.png](https://cdn.nlark.com/yuque/0/2019/png/271500/1566807966490-586f19b6-73eb-42ec-8d1f-113424e4f0fe.png#align=left&display=inline&height=197&name=image.png&originHeight=433&originWidth=737&size=37197&status=done&width=334.9999927390707)
 <a name="MqS55"></a>
 #### API名称提示
 直接输入方法名可以提示相应的api
 
-![image.png](https://cdn.nlark.com/yuque/0/2019/png/271500/1566355333500-eaef96de-a909-4608-bd79-2dcd2e6b2e09.png#align=left&display=inline&height=579&name=image.png&originHeight=637&originWidth=1123&size=120944&status=done&width=1020.9090687814828)
+![image.png](https://cdn.nlark.com/yuque/0/2019/png/271500/1566807988194-8b56e0d1-007f-4820-85c6-9ed804e3d61a.png#align=left&display=inline&height=189&name=image.png&originHeight=416&originWidth=924&size=88137&status=done&width=419.9999908967454)
 
 <a name="OF5GR"></a>
 # 调试
@@ -107,7 +90,7 @@
 
 <a name="bUxxz"></a>
 # 下载安装
-版本更新 [mtl-vs ](https://marketplace.visualstudio.com/items?itemName=mtl-ide.mtl-vs)[0.0.7](https://marketplace.visualstudio.com/items?itemName=mtl-ide.mtl-vs)<br />版本更新 mtl-vs 0.0.8
+版本更新 [mtl-vs ](https://marketplace.visualstudio.com/items?itemName=mtl-ide.mtl-vs)[0.0.7](https://marketplace.visualstudio.com/items?itemName=mtl-ide.mtl-vs)<br />版本更新 [mtl-vs ](https://marketplace.visualstudio.com/items?itemName=mtl-ide.mtl-vs)[0.0.8]()
 <a name="xVfBB"></a>
 ### 
 

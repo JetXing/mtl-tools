@@ -4,14 +4,14 @@
 ```
 mtl debug [ iOS | Android | WX | DD]
 ```
-<a name="android" class="anchor"></a >
 
+<a name="android" class="anchor"></a >
 ## android 调试 
-<a name="djD7U"></a>
+
 ### 概述
 - Android调试，指使用Android设备真机或者Android 网易模拟器 MuMu进行工程H5代码的调试；
-- 准备：Android设备真机或者Android 网易模拟器 MuMu，Chrome浏览器；
-- 调试期间开发者只需在Chrome浏览器中，跟踪到自己写的调用方法是否调用，回调方法是否响应，然后在代码按步骤跟踪自己的代码罗辑。
+- 准备：Android设备真机或者Android 网易模拟器 MuMu，pc端安装Chrome浏览器；
+- 调试期间，开发者可在Chrome浏览器中跟踪方法是否调用；回调方法是否响应；代码逻辑是否正确等。
 
 
 ###  网易模拟器 MuMu 调试步骤
@@ -19,7 +19,7 @@ mtl debug [ iOS | Android | WX | DD]
 - 在电脑终端命令行进入已创建的工程目录（创建工程文档见：[链接](http://mtltoolsdocs20190806.test.app.yyuap.com/0201-mtl-cli-quick-start#%E5%88%9B%E5%BB%BA%E5%B7%A5%E7%A8%8B)）
 - Windows电脑输入：adb connect 127.0.0.1:7555，mac电脑输入：adb connect 127.0.0.1:5555 ，链接网易模拟器 MuMu
 - 输入：mtl d android，应用会自动运行到模拟器
-- 打开Chrome浏览器，地址栏录入地址：[chrome://inspect/#devices]()
+- pc端打开Chrome浏览器，地址栏录入地址：[chrome://inspect/#devices]()
 
 ![debug1.png](https://cdn.nlark.com/yuque/0/2019/png/271483/1566790595694-6493e60b-fdab-42e3-810b-636a1337fda6.png#align=left&display=inline&height=1240&name=debug1.png&originHeight=1240&originWidth=1982&size=174735&status=done&width=1982)
 
@@ -36,7 +36,7 @@ mtl debug [ iOS | Android | WX | DD]
 - 在电脑终端命令行进入已创建的工程目录（创建工程文档见：[链接](http://mtltoolsdocs20190806.test.app.yyuap.com/0201-mtl-cli-quick-start#%E5%88%9B%E5%BB%BA%E5%B7%A5%E7%A8%8B)）
 - 输入：mtl b android，打包工程
 - 数据线连接真机设备，电脑命令输入：mtl start，应用会自动运行到真机上面
-- 打开Chrome浏览器，地址栏录入地址：[chrome://inspect/#devices]()
+- pc端打开Chrome浏览器，地址栏录入地址：[chrome://inspect/#devices]()
 
 ![debug3.png](https://cdn.nlark.com/yuque/0/2019/png/271483/1566791242513-25821ce9-204e-44ab-96e4-a8882d5a3ddc.png#align=left&display=inline&height=1322&name=debug3.png&originHeight=1322&originWidth=1854&size=212105&status=done&width=1854)
 
@@ -50,13 +50,13 @@ mtl debug [ iOS | Android | WX | DD]
 
 ## iOS 调试 
 + iOS 需要搭建好xcode 开发环境；
-#### 提示： 目前iOS仅支持模拟器调试。
+#### 提示： 目前iOS仅支持模拟器调试(模拟器调试，需要苹果系统的电脑，下载[Xcode](https://apps.apple.com/cn/app/xcode/id497799835?mt=12))。
 
 #### 使用Safari浏览器调试WebView
 
 使用Safari浏览器调试WebView比较简单无需过多的程序配置,只需点击几个开关按钮即可.
 
-首先打开模拟器或者真机设置中"Safari浏览器"→"高级"→"Web检查器"的开关 如下图所示.
+首先打开模拟器设置中"Safari浏览器"→"高级"→"Web检查器"的开关 如下图所示.
 
 ![WechatIMG1.jpeg](https://cdn.nlark.com/yuque/0/2019/jpeg/271511/1566799469597-7cbdd9ee-60fa-4e5f-9d62-4e774d43aae4.jpeg#align=left&display=inline&height=500&name=WechatIMG1.jpeg&originHeight=500&originWidth=1000&size=92724&status=done&width=1000)
 
@@ -70,7 +70,7 @@ mtl debug [ iOS | Android | WX | DD]
 ![WechatIMG4.png](https://cdn.nlark.com/yuque/0/2019/png/271511/1566799717027-0e7459da-0623-4f2b-9801-c78f4b25e756.png#align=left&display=inline&height=912&name=WechatIMG4.png&originHeight=912&originWidth=1494&size=218341&status=done&width=1494)
 
 
-这时候真机连接上数据线.或者开启模拟器就能在菜单栏"开发"选项中找到我们的设备或者是模拟器.
+这时候开启模拟器就能在菜单栏"开发"选项中找到我们的模拟器.
 
 
 ![WechatIMG6.png](https://cdn.nlark.com/yuque/0/2019/png/271511/1566799945966-4f6be8c4-e92b-4663-a677-ed10beba624c.png#align=left&display=inline&height=1366&name=WechatIMG6.png&originHeight=1366&originWidth=1384&size=2926053&status=done&width=1384)
@@ -151,7 +151,7 @@ $ mtl debug wx
 
 <a name="gqXqI"></a>
 ### 本地真机调试
-如果本地的html静态资源在本地，需要使用[内网穿透](https://ding-doc.dingtalk.com/doc#/kn6zg7/hb7000)功能，实现真机访问电脑端的localhost
+如果本地的html静态资源在本地，需要使用[内网穿透](https://ding-doc.dingtalk.com/doc#/kn6zg7/hb7000)功能，实现真机访问电脑端的localhost，内网穿透文档中只有Mac的实例，如果使用的是windows电脑，执行命令的方式为`ding -config=./ding.cfg -subdomain=jetyonyou 3000`
 
 <a name="WDhrU"></a>
 #### 配置地址，同时配置到钉钉后台的安全域名
@@ -166,7 +166,7 @@ $ mtl debug wx
 
 
 ### debug 调试host配置和功能说明：
-+ 调试配置pc的host 文件如下： 添加“ 127.0.0.1       mobile.yyuap.com ”  ；
++ (仅调试微信需要)调试配置pc的host 文件如下： 添加“ 127.0.0.1       mobile.yyuap.com ”  ；
 + 修改文件热更新，如果在项目工程下，修改了project.json 或者 app目录下的工程源码都会自动更新到output平台目录下的工程目录，需要在 android ，iOS ，wx小程序工具 ，钉钉小程序工具 里刷新就可以看到修改的效果。
 + 友情提示，终端命令行在调试状态下 ，一直处于工程的监听中 ，请不要中断当前的状态 ，直到想要终止调试，进行其他操作。
 

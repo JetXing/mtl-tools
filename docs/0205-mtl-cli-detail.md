@@ -73,7 +73,11 @@ project.json文件 是工程配置文件，工程的信息以及各个端需要�
             "isScreenEdge": false,
             "color": "",
             "isStatusBarDefault": true
-            }
+            },
+        "serviceUrl" : {
+            "uploadUrl" : "https://mdoctor.yonyoucloud.com/mtldebugger/mtl/file/uploadToOSS",
+            "downloadUrl" : "https://mdoctor.yonyoucloud.com/mtldebugger/mtl/stream/download"
+        }
     }
 }
 ```
@@ -103,7 +107,12 @@ project.json文件 是工程配置文件，工程的信息以及各个端需要�
 	2、showStatusBar为NO时，隐藏状态栏时 isScreenEdge默认为YES;
     3、color #000000 为16进制值
 	```
++ serviceUrl ：配置上传、下载地址
 
+    ```
+    uploadUrl：上传地址
+    downloadUrl：下载地址
+    ```
 
 
 ### 设置android包名
@@ -254,7 +263,7 @@ adb -s “emulator-5554” shell
  
 
 ### debug 调试host配置和功能说明：
-+ 配置pc的host 文件如下： 添加“ 127.0.0.1       mobile.yyuap.com ”  ；
++ (仅调试微信需要)配置pc的host 文件如下： 添加“ 127.0.0.1       mobile.yyuap.com ”  ；
 + 修改文件热更新，如果在项目工程下，修改了project.json 或者 app目录下的工程源码都会自动更新到output平台目录下的工程目录，需要在 android ，iOS ，wx小程序工具 ，钉钉小程序工具 里刷新就可以看到修改的效果。
 + 友情提示，终端命令行在调试状态下 ，一直处于工程的监听中 ，请不要中断当前的状态 ，直到想要终止调试，进行其他操作。
 

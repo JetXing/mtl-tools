@@ -6,37 +6,36 @@
   },
   "命令行": {
     "version": "5.0.0",
-    "component": "gjtx",
+    "component": "terminal-module",
     "children": {
       "": {
         "快速开始": {
           "version": "5.0.0",
           "component": "0201-mtl-cli-quick-start",
           "menus": {
-            "安装mtl":"安装mtl",
-            "创建工程":"创建工程",
-            "创建页面":"创建页面",
-            "添加插件引用原生功能":"添加插件引用原生功能",
-             "调试":"调试",
-            "预览":"预览",
-            "构建":"构建"
+            "安装mtl": "安装mtl",
+            "创建工程": "创建工程",
+            "创建页面": "创建页面",
+            "添加插件引用原生功能": "添加插件引用原生功能",
+            "调试": "调试",
+            "预览": "预览",
+            "构建": "构建"
           }
         },
         "调试": {
           "version": "5.0.0",
           "component": "0202-mtl-cli-debug",
           "menus": {
-            "android":"Android调试",
-            "ios":"iOS调试",
-            "wx":"微信小程序调试",
-            "dd":"钉钉小程序调试"
+            "android": "Android调试",
+            "ios": "iOS调试",
+            "wx": "微信小程序调试",
+            "dd": "钉钉小程序调试"
           }
         },
         "预览": {
           "version": "5.0.0",
           "component": "0203-mtl-cli-preview",
-          "menus": {
-          }
+          "menus": {}
         },
         "构建": {
           "version": "5.0.0",
@@ -47,53 +46,42 @@
           "version": "5.0.0",
           "component": "0205-mtl-cli-detail",
           "menus": {
-            "创建工程":"创建工程",
-            "工程配置文件":"工程配置文件",
-            "设置应用图标和启动图":"设置应用图标和启动图",
-            "创建页面":"创建页面",
-            "添加插件引用原生功能":"添加插件引用原生功能",
-            "调试":"调试",
-            "预览":"预览",
-            "构建":"构建",
-            "运行":"运行",
-            "git账号配置":"git账号配置",
-            "设置环境变量":"设置环境变量",
-
-            "FAQ":"FAQ"
+            "创建工程": "创建工程",
+            "工程配置文件": "工程配置文件",
+            "设置应用图标和启动图": "设置应用图标和启动图",
+            "创建页面": "创建页面",
+            "添加插件引用原生功能": "添加插件引用原生功能",
+            "调试": "调试",
+            "预览": "预览",
+            "构建": "构建",
+            "运行": "运行",
+            "git账号配置": "git账号配置",
+            "设置环境变量": "设置环境变量",
+            "FAQ": "FAQ"
           }
-        },
-        "插件说明文档": {
-          "version": "5.0.0",
-          "component": "0206-mtl-cli-plugin",
-          "menus": {}
         }
       }
     }
   },
+  
   "IDE": {
     "version": "5.0.0",
-    "component": "gjtx",
+    "component": "ide-module",
     "children": {
       "": {
         "快速开始": {
           "version": "5.0.0",
           "component": "0301-mtl-ide-quick-start",
           "menus": {
-            "0NUOn":"获取VS Code",
-            "vU40y":"安装运行环境",
-            "1LXZd":"安装MTL插件",
-            "sXYc9":"创建工程",
-             "PM5cG":"添加页面",
-            "g71sn":"调试",
-            "N5n1m":"预览",
-            "4Uvog":"打包",
-            "MWrbf":"MTL IDE功能说明"
-          }
-        },
-        "MTL-IDE可以做什么": {
-          "version": "5.0.0",
-          "component": "0301-mtl-ide-overview",
-          "menus": {
+            "0NUOn": "获取VS Code",
+            "vU40y": "安装运行环境",
+            "1LXZd": "安装MTL插件",
+            "sXYc9": "创建工程",
+            "PM5cG": "添加页面",
+            "g71sn": "调试",
+            "N5n1m": "预览",
+            "4Uvog": "打包",
+            "MWrbf": "MTL IDE功能说明"
           }
         },
         "调试": {
@@ -106,12 +94,65 @@
           "component": "0303-mtl-ide-preview",
           "menus": {}
         },
+        "构建": {
+          "version": "5.0.0",
+          "component": "0305-mtl-ide-build",
+          "menus": {}
+        },
         "详细帮助文档": {
           "version": "5.0.0",
           "component": "0304-mtl-ide-help",
           "menus": {
-            "oNuib":"界面"
+            "oNuib": "界面"
           }
+        }
+      }
+    }
+  },
+  "高级主题": {
+    "version": "5.0.0",
+    "component": "advance-topics-module",
+    "children": {
+      "":{
+        "多端协同":{
+          "version":"5.0.0",
+          "component":"0401-mtl-plugin-mulTerminal",
+          "menus":{
+            "EsvaX": "简介",
+            "yhKAg": "集成准备",
+            "BOB0s": "开始使用",
+            "JfY93": "推送消息至客户端"
+          }
+        },
+        "IM推送":{
+          "version":"5.0.0",
+          "component":"0406-mtl-plugin-imPush",
+          "menus":{
+            "EsvaX": "简介",
+            "yhKAg": "集成准备",
+            "BOB0s": "开始使用",
+            "JfY93": "推送消息至客户端"
+          }
+        },
+        "小友智能":{
+          "version":"5.0.0",
+          "component":"0402-mtl-plugin-vui",
+          "menus":{}
+        },
+        "人脸识别":{
+          "version":"5.0.0",
+          "component":"0403-mtl-plugin-faceverify",
+          "menus":{}
+        },
+        "友盟分享":{
+          "version":"5.0.0",
+          "component":"0404-mtl-plugin-umeng",
+          "menus":{}
+        },
+        "百度定位":{
+          "version":"5.0.0",
+          "component":"0405-mtl-plugin-bdlocation",
+          "menus":{}
         }
       }
     }
