@@ -23,7 +23,8 @@ web | 移动Web应用
 <a name="前置软件安装" class="anchor"></a >
 
 ### 前置软件安装
-+ 首先安装node.js、npm、git
++ 安装node.js  版本用请用 10 以上。下载地址：https://nodejs.org/en/  。
++ 安装 git     下载地址： https://git-scm.com/downloads 。
 
 <a name="安装mtl" class="anchor"></a >
 
