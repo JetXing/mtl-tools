@@ -36,7 +36,7 @@ MTL IDE目前提供iOS和Android两种云打包服务。<br />(1).脚本区点�
 
 <a name="MWrbf"></a>
 ## 8.MTL IDE功能说明
-如图所示：<br />![image.png](https://cdn.nlark.com/yuque/0/2019/png/271500/1568257186715-30f702b2-7fa8-4faa-8c9f-972f079aa8bc.png#align=left&display=inline&height=334&name=image.png&originHeight=1002&originWidth=1812&size=152122&status=done&width=604)
+如图所示：<br />![image.png](https://cdn.nlark.com/yuque/0/2019/png/271500/1568257374913-737a40e9-c878-4a24-8677-e7978a32b035.png#align=left&display=inline&height=338&name=image.png&originHeight=1015&originWidth=1868&size=141967&status=done&width=622.6666666666666)
 
 (1).点击左侧菜单栏![image.png](https://cdn.nlark.com/yuque/0/2019/png/271499/1566545079152-1388d6dd-eb64-42fb-abaf-e97ea9d852ab.png#align=left&display=inline&height=16&name=image.png&originHeight=32&originWidth=38&size=4181&status=done&width=19)按钮即可打开MTL IDE，包含工程目录、脚本目录、API目录、工程配置区等功能模块。<br />(2).工程目录即开发者打开或创建的mtl工程，可以清晰的看到整个工程结构。<br />(3).脚本目录存放开发者常用脚本，功能包括打包、调试、预览等；另外，脚本支持自定义，开发者可在标准mtl工程目录的script目录下添加自己的脚本。
 
