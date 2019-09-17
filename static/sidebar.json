@@ -134,6 +134,16 @@
             "JfY93": "推送消息至客户端"
           }
         },
+        "阿里推送":{
+          "version":"5.0.0",
+          "component":"0407-mtl-plugin-aliPush",
+          "menus":{
+            "XeEzC": "简介",
+            "M1aQd": "集成准备",
+            "YTo3Q": "开始使用",
+            "JfY93": "推送消息至客户端"
+          }
+        },
         "小友智能":{
           "version":"5.0.0",
           "component":"0402-mtl-plugin-vui",

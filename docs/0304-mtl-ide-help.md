@@ -84,9 +84,6 @@ MTL IDE除了提供工程模板以为，还提供丰富的页面目标供开发�
 
 ![image.png](https://cdn.nlark.com/yuque/0/2019/png/271500/1566807988194-8b56e0d1-007f-4820-85c6-9ed804e3d61a.png#align=left&display=inline&height=189&name=image.png&originHeight=416&originWidth=924&size=88137&status=done&width=419.9999908967454)
 
-<a name="OF5GR"></a>
-# 调试
-待更新
 
 <a name="bUxxz"></a>
 # 下载安装
