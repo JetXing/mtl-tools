@@ -38,16 +38,16 @@ iOS推送证书是一个后缀为.p12的文件，需要为p12证书设置一个�
 
 ```javascript
 mtl.push.initialize({
-		server: 'stellar.yyuap.com',//长连接地址
-		restServer: 'im.yyuap.com',//短连接地址
-		resourceUploadServer: 'up.im.yyuap.com', //资源上传服务器地址
-		resourceDownloadServer: 'down.im.yyuap.com',//资源下载服务器地址
-		serverPort: 5227,//服务器端口
-		serverSSLPort: 5223,//SSL端口
+		server: 'stellar.yyuap.com',//长连接地址，固定
+		restServer: 'im.yyuap.com',//短连接地址，固定
+		resourceUploadServer: 'up.im.yyuap.com', //资源上传服务器地址，固定
+		resourceDownloadServer: 'down.im.yyuap.com',//资源下载服务器地址，固定
+		serverPort: 5227,//服务器端口，固定
+		serverSSLPort: 5223,//SSL端口，固定
 		serverEnableSSL: true,//是否开启SSL端口
 		serverHttps: true,//是否是https
 		appId: 'pushdemo',//应用ID
-		etpId: 'yonyou',//租户ID
+		etpId: 'yonyou',//企业ID
 		apnsCerName:'preview_dev',//后台上传的推送证书名称
 		clientId:"ceadbd08000b66ebebc9a34944daddae",                // IM后台申请的clientId
   		clientSecret:"B36BB333DBE101719C40FDE9E7C118A5"				// IM后台申请的clientSecret
@@ -65,6 +65,8 @@ mtl.push.login({
 		}
 	 });
 ```
+此处用到的userId，来源于控制台的用户管理，由于password在创建用户时是选填项，因此没有密码可不填。
+![image.png](https://cdn.nlark.com/yuque/0/2019/png/271499/1568875249650-957ca940-9a41-403a-87bf-ab29542a7b0e.png?x-oss-process=image/resize,w_1492)
 
 <a name="JfY93"></a>
 ## 四、使用后台推送消息至客户端
