@@ -24,7 +24,7 @@
 (1).在工程根目录下(即project.json所在目录)，使用mtl命令(mtl add-plugin)添加推送插件，如图所示：![image.png](https://cdn.nlark.com/yuque/0/2019/png/271499/1568613632851-1015d4a0-3f25-432e-8a40-65cfaade9c63.png#align=left&display=inline&height=226&name=image.png&originHeight=452&originWidth=1138&size=235985&status=done&width=569)<br />上下选择需要添加的插件，然后按"空格"选定，插件列表前方的○变为绿色即为选择状态，可多选。
 
 (2).修改project.json文件，添加在2.2节申请的appKey和appSecret，安卓需要额外添加channelId，如图所示：![image.png](https://cdn.nlark.com/yuque/0/2019/png/271499/1568614201039-8f2cef72-3c7c-4ce7-95a3-061a0ac45f7e.png#align=left&display=inline&height=348&name=image.png&originHeight=696&originWidth=1614&size=138651&status=done&width=807)
-
+关于channelId请参考[这篇文章](https://helpcdn.aliyun.com/knowledge_detail/67398.html)
 <a name="qhIL6"></a>
 ### 3.2 添加推送关键代码
 阿里推送平台提供消息和通知两种推送服务：<br />通知：会自动在手机端弹窗，用户可以执行打开或者清除通知的操作。<br />消息：发送后不会在系统通知栏弹窗 ，需要自定义—> 样式和打开方式。<br />[查看消息和通知的区别](https://help.aliyun.com/knowledge_detail/55174.html?spm=a2c4g.11186631.2.11.420eb068OEwPZZ)<br />基于阿里推送平台的特点，MTL提供了两个方法分别获取消息和通知的内容。
