@@ -34,7 +34,7 @@ channelId为通知渠道的id，在Android8.0及以上需要配置，否则通�
 (1).引入aliyunpush.js(路径根据自己工程目录而定)，代码如下：
 
 ```javascript
-<script src="../refs/mtl/aliyunpush.js"></script>
+<script src="../refs/mtl/mtl.ali-push.js"></script>
 ```
 (2).注册推送通知监听，通过mtl.aliPush.receivePush()方法，开发者可以注册一个推送通知的监听，当用户点击通知栏中的推送通知，会打开app，通知内容可以在监听方法中拿到，开发者可以根据通知内容进行逻辑处理。
 ```javascript
