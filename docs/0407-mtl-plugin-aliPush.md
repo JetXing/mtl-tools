@@ -29,7 +29,12 @@
 ### 3.2 添加推送关键代码
 阿里推送平台提供消息和通知两种推送服务：<br />通知：会自动在手机端弹窗，用户可以执行打开或者清除通知的操作。<br />消息：发送后不会在系统通知栏弹窗 ，需要自定义—> 样式和打开方式。<br />[查看消息和通知的区别](https://help.aliyun.com/knowledge_detail/55174.html?spm=a2c4g.11186631.2.11.420eb068OEwPZZ)<br />基于阿里推送平台的特点，MTL提供了两个方法分别获取消息和通知的内容。
 
-(1).注册推送通知监听，通过mtl.aliPush.receivePush()方法，开发者可以注册一个推送通知的监听，当用户点击通知栏中的推送通知，会打开app，通知内容可以在监听方法中拿到，开发者可以根据通知内容进行逻辑处理。
+(1).引入aliyunpush.js(路径根据自己工程目录而定)，代码如下：
+
+```javascript
+<script src="../refs/mtl/aliyunpush.js"></script>
+```
+(2).注册推送通知监听，通过mtl.aliPush.receivePush()方法，开发者可以注册一个推送通知的监听，当用户点击通知栏中的推送通知，会打开app，通知内容可以在监听方法中拿到，开发者可以根据通知内容进行逻辑处理。
 ```javascript
 mtl.aliPush.receivePush({
 		success: function (res) {
@@ -38,7 +43,7 @@ mtl.aliPush.receivePush({
 });
 ```
 
-(2).获取消息数据，通过mtl.aliPush.getOffLinePush()方法，开发者可以获取当前设备收到的消息。
+(3).获取消息数据，通过mtl.aliPush.getOffLinePush()方法，开发者可以获取当前设备收到的消息。
 ```javascript
 mtl.aliPush.getOffLinePush({
 		success: function (res) {
