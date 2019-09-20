@@ -40,8 +40,6 @@ iOS推送证书是一个后缀为.p12的文件，需要为p12证书设置一个�
 mtl.push.initialize({
 		server: 'stellar.yyuap.com',//长连接地址，固定
 		restServer: 'im.yyuap.com',//短连接地址，固定
-		resourceUploadServer: 'up.im.yyuap.com', //资源上传服务器地址，固定
-		resourceDownloadServer: 'down.im.yyuap.com',//资源下载服务器地址，固定
 		serverPort: 5227,//服务器端口，固定
 		serverSSLPort: 5223,//SSL端口，固定
 		serverEnableSSL: true,//是否开启SSL端口
