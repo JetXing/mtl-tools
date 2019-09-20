@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iuap-design/bee.tinper.org.git"
+    "url": "git+https://github.com/JetXing/mtl-tools.git"
   },
   "keywords": [
     "react",
@@ -33,9 +33,9 @@
   "author": "iuap",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/iuap-design/bee.tinper.org/issues"
+    "url": "https://github.com/JetXing/mtl-tools/issues"
   },
-  "homepage": "https://github.com/iuap-design/bee.tinper.org#readme",
+  "homepage": "https://github.com/JetXing/mtl-tools#readme",
   "devDependencies": {},
   "dependencies": {
     "axios": "^0.18.0",
