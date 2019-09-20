@@ -34,7 +34,12 @@ iOS推送证书是一个后缀为.p12的文件，需要为p12证书设置一个�
 
 <a name="qhIL6"></a>
 ### 3.2 添加推送关键代码
-(1).在合适的时机(一般为页面初始化完成后)调用推送的初始化方法，此处用到了2.2节创建的appId、etpId、clientId、clientSecret以及2.3节添加的推送证书名称。
+(1).引入mtl.push.js(路径根据自己工程目录而定)，代码如下：
+
+```javascript
+<script src="../refs/mtl/mtl.push.js"></script>
+```
+(2).在合适的时机(一般为页面初始化完成后)调用推送的初始化方法，此处用到了2.2节创建的appId、etpId、clientId、clientSecret以及2.3节添加的推送证书名称。
 
 ```javascript
 mtl.push.initialize({
@@ -52,7 +57,7 @@ mtl.push.initialize({
 	});
 ```
 
-(2).调用登录方法，登录成功后即可使用后台推送服务，客户端会收到推送消息，代码如下：
+(3).调用登录方法，登录成功后即可使用后台推送服务，客户端会收到推送消息，代码如下：
 
 ```javascript
 mtl.push.login({
