@@ -20,18 +20,24 @@ appname 是工程名称
 
 命令交互中，选择需要的样版工程
 +  一个空的MTL工程 。
-+   一个MTL demo工程 ，涉及原生交互的一些功能。
++  一个MTL demo工程 ，涉及原生交互的一些功能。
++  一个空的MTL react工程 。
 
 ####  注意
 ```
+问题一：
 如果 mac 在创建工程结束的时候报错“Error: EACCES: permission denied” ，这个可能是 安装 express 没有权限导致 。
 解决方法 ：
 1）、进入到你创建的**工程目录** 下 ，执行：sudo npm --save install express ，等待安装包执行完成后就可以了。
 2）、修改你的workspace 目录操作权限，指令： sudo chmod -R 777 workspace 的文件夹目录。
-
+问题二：
 如果在win上同样出现权限的报错，请查询win修改权限相关的操作。
+问题三：
 如果在win上出现“no such file or directory...” ,说明git clone 失败，请查询
 git的环境变量是否已经配置好。
+问题四：
+如果创建的是react工程 ，在创建完成后 ，进入到工程根目录下，一定要执行npm install  命令 ，下载react 工程需要的依赖包。
+
 ```
 
 <a name="工程配置文件" class="anchor"></a >
@@ -44,14 +50,14 @@ project.json文件 是工程配置文件，工程的信息以及各个端需要�
 ```
 {
     "config": {
-        "appName": "mtl",
-        "packageName": "com.yonyou.mtl",
+        "appName": "demo",
+        "packageName": "com.yonyou.demo",
         "bundleID": "com.yonyou.uap.mobile5",
-        "projectName": "mtl",
+        "projectName": "demo",
         "versionName": "1.0.0",
         "versionCode": "100",
         "versionBuild": "1.0.0",
-        "startPage": "index.html",
+        "startPage": "welcome/index.html",
         "debuggerEnable": "false",
         "reinforcement": "false",
         "sandbox": "false",
@@ -65,7 +71,18 @@ project.json文件 是工程配置文件，工程的信息以及各个端需要�
         "isLibraryCompilation": "false",
         "ddAppCode": "dingnlb2wikil7pldytf",
         "wxAppCode": "dingnlb2wikil7pldytf",
-        "cordovaPlugins": [],
+        "cordovaPlugins": [
+			{
+				"name": "mtl-plugin-bdlocation",
+				"type": "cordova",
+				"parameters": [
+	                   "BDMAP_KEY_ANDROID=hvontoOPpe0YWDgGVrtLHel8mSm6ibhG"
+				]
+			},
+			{
+				"name": "mtl-plugin-terminal",
+				"type": "cordova"
+			}],
         "gitUrl": "https://gogs.yonyoucloud.com/caiyi/mtl.git",
         "technologyStack": "tradition",
         "setStatusBar": {
@@ -73,10 +90,10 @@ project.json文件 是工程配置文件，工程的信息以及各个端需要�
             "isScreenEdge": false,
             "color": "",
             "isStatusBarDefault": true
-            },
-        "serviceUrl" : {
-            "uploadUrl" : "https://mdoctor.yonyoucloud.com/mtldebugger/mtl/file/uploadToOSS",
-            "downloadUrl" : "https://mdoctor.yonyoucloud.com/mtldebugger/mtl/stream/download"
+        },
+        "serviceUrl": {
+            "uploadUrl": "https://mdoctor.yonyoucloud.com/mtldebugger/mtl/file/uploadToOSS",
+            "downloadUrl": "https://mdoctor.yonyoucloud.com/mtldebugger/mtl/stream/download"
         }
     }
 }
@@ -210,8 +227,7 @@ pagename
 + empty:标准空页面 <--默认
 + list:标准列表页面
 + login:标准登录页面
-+ ncc-login: ncc 登录页面
-+ ncc-platform:ncc平台页面
+
 
 <a name="添加插件引用原生功能" class="anchor"></a >
 
@@ -225,6 +241,8 @@ mtl  add-plugin
 + mtl-plugin-terminal   多端控制
 + mtl-plugin-umeng      三方友盟
 + mtl-plugin-vui        语音交互
++ mtl-plugin-notification 推送 （备注 不能同时启用两个推送）
++ mtl-plugin-alinotification  阿里推送 （备注 不能同时启用两个推送）
 ```
 用户进入多选 checkbox 操作中 ，通过按下 "空格" 键选择，
 上下箭头来移动光标，按下"a"实现全选, 按下"i"实现反选。
@@ -312,15 +330,15 @@ mtl build [ iOS | Android ]
 ### 构建功能准备和功能说明：
 
 ```
-    1、 在构建之前最好先设置一下构建打包方式，构建方式支持两种方式：源码上传打包 和 git 分支打包。 
-命令： mtl set-buildType  设置构建方式。
-    2、 在构建之前需要上传android 的打包签名文件；iOS的证书和描述文件 。上传证书的网站暂时不对外开放 。android 的签名文件，iOS的证书 和描述文件 可以先发邮箱给xugangm@yonyou.com或者在微信群里@david。
-    android 的签名文件需要提供签名文件 ，密码 ，别名、别名密码以及包名ID，包名ID和签名文件是绑定的。
-    iOS 提供证书和签名文件 、证书的密码以及iOS的bundle ID 。bundle ID和证书是绑定的关系。
+     1、在构建之前需要上传android 的打包签名文件；iOS的证书和描述文件 。
+     2、登录网站 ：http://123.103.9.204:8050/ump/html/login.jsp#
+     3、账号支持原用友官网账号登录，也支持友互通登录（用友云账号以及绑定手机号）。
+     4、登录成功后 点击页面右上角的 构建管理- 安卓证书 或者iOS 证书。
+     5、android的签名文件上传需要提供签名文件 、密码、别名等 ，上传成功后，并设置为默认。
+     6、iOS 提供证书和匹配的描述文件 、证书的密码等，上传成功后，并将描述文件设置为默认。
 ```
 
 + 云构建server源码上传方式，将功能开发实现的静态源码资源与project.json 文件一并打包成zip压缩文件，上传至云构建server并完成构建打包。
-+ 云构建server 支持git 远程代码下载到构建服务器进行云构建。需要在构建前通过"mtl set-git" 配置好Git 仓库 、分支、账号、密码等要素。
 + 云构建结束后会在控制台显示构建日志以及构建包存放目录；
 + 云构建成功后在output目录存放构建包。
 
@@ -334,15 +352,6 @@ mtl start  [ Android ]
 ### 安装运行说明
 + 请连接android真机设备或者模拟器。
 
-<a name="git账号配置" class="anchor"></a >
-
-# git账号配置
-```
-mtl set-git  
-```
-### 设置git说明
-+ 用于云端构建 ，在构建服务器增量更新源码。
-+ 根据提示 输入git仓库URL ，分支 ，账户，密码。
 
 <a name="设置环境变量" class="anchor"></a >
 
@@ -350,8 +359,8 @@ mtl set-git
 ```
 mtl set-config key value
 
-//设置git的地址
-mtl set-config git-url http://git.yonyou.com/xxx/xxx/
+//设置buildServer的id
+mtl set-config buildServerID 13681528684
 ```
 <a name="FAQ" class="anchor"></a >
 

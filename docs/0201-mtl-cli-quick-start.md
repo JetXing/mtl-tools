@@ -52,10 +52,13 @@ appname 是工程名称
 +  本地已创建的工程不能同名再创建，造成本地目录同名；
 
 选择样版工程
-+  ：一个空的MTL工程 。
-+  : 一个MTL demo工程 ，涉及原生交互的一些功能。
++  一个空的MTL H5工程 。
++   一个MTL H5 demo工程 ，涉及原生交互的一些功能。
++   一个空的MTL react工程 。
 
-
+```
+注意  如果创建的是react工程 ，在创建完成后 ，进入到工程根目录下，一定要执行npm install  命令 ，下载react 工程需要的依赖包。
+```
 
 <a name="创建页面" class="anchor"></a >
 
@@ -72,8 +75,7 @@ pagename
 + empty:标准空页面 <--默认
 + list:标准列表页面
 + login:标准登录页面
-+ ncc-login: ncc 登录页面
-+ ncc-platform:ncc平台页面
+
 
 <a name="添加插件引用原生功能" class="anchor"></a >
 
@@ -87,6 +89,8 @@ mtl  add-plugin
 + mtl-plugin-terminal   多端控制
 + mtl-plugin-umeng      三方友盟
 + mtl-plugin-vui        语音交互
++ mtl-plugin-notification 推送 （备注 不能同时启用两个推送）
++ mtl-plugin-alinotification  阿里推送 （备注 不能同时启用两个推送）
 ```
 用户进入多选 checkbox 操作中 ，通过按下 "空格" 键选择，
 上下箭头来移动光标，按下"a"实现全选, 按下"i"实现反选。
@@ -179,8 +183,7 @@ mtl build [ iOS | Android ]
 ### 构建功能准备和功能说明：
 
 
-
 + 云构建server源码上传方式，将功能开发实现的静态源码资源与project.json 文件一并打包成zip压缩文件，上传至云构建server并完成构建打包。
-+ 云构建server 支持git 远程代码下载到构建服务器进行云构建。需要在构建前通过"mtl set-git" 配置好Git 仓库 、分支、账号、密码等要素。
+
 + 云构建结束后会在控制台显示构建日志以及构建包存放目录；
 + 云构建成功后在output目录存放构建包。
