@@ -3,6 +3,8 @@
 <a name="v4OAo"></a>
 ### script 脚本区
 注意：[**熟悉mtl-cli命令的可以自行定义**](http://mtltoolsdocs20190806.test.app.yyuap.com/0201-mtl-cli-detail)
+<br />
+一旦开始预览，想要切换为其他端的预览，需要在Terminal进行”CTRL+C“操作，终端当前预览。
 
 - preview 执行后会生成预览二维码分为以下几种
   - **Android**  在下载中心 查找 [MTL-JSAPI-原生预览工具-Android预览工具](http://mobile.yyuap.com/mtl/download/) 下载安装后扫码即可
