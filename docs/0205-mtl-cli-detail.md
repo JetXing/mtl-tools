@@ -72,11 +72,17 @@ project.json文件 是工程配置文件，工程的信息以及各个端需要�
         "ddAppCode": "dingnlb2wikil7pldytf",
         "wxAppCode": "dingnlb2wikil7pldytf",
         "cordovaPlugins": [
+        {
+				"name": "mtl-plugin-faceverify",
+				"type": "cordova",
+				"parameters": [					"LICENSEID_IOS=renliantest-face-ios",					"LICENSEID_ANDROID=mtl-android-face-android",            	"BASE_URL=http://172.20.14.154:80",					"PUB_KEY=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCJwnm0t5GdNp/Q7fEM+jGMoxK/1S0r0KaMF2vsX2cXRRkb7fGo/uXhtbrDqjzvoqF954idr3vRRJ8jIC7BNxbhSoETIpxqr78Yup5rF6HlA8mEOZWavPNQ6Y1zz+uRS7QV2GrMEy2D/Wdrru6TWFVfhiKM2RvavrdncinYCSmxqQIDAQAB"
+				]
+			},
 			{
 				"name": "mtl-plugin-bdlocation",
 				"type": "cordova",
 				"parameters": [
-	                   "BDMAP_KEY_ANDROID=hvontoOPpe0YWDgGVrtLHel8mSm6ibhG"
+	"BDMAP_KEY_ANDROID=hvontoOPpe0YWDgGVrtLHel8mSm6ibhG"
 				]
 			},
 			{
@@ -330,12 +336,17 @@ mtl build [ iOS | Android ]
 ### 构建功能准备和功能说明：
 
 ```
-     1、在构建之前需要上传android 的打包签名文件；iOS的证书和描述文件 。
-     2、登录网站 ：http://123.103.9.204:8050/ump/html/login.jsp#
-     3、账号支持原用友官网账号登录，也支持友互通登录（用友云账号以及绑定手机号）。
-     4、登录成功后 点击页面右上角的 构建管理- 安卓证书 或者iOS 证书。
-     5、android的签名文件上传需要提供签名文件 、密码、别名等 ，上传成功后，并设置为默认。
-     6、iOS 提供证书和匹配的描述文件 、证书的密码等，上传成功后，并将描述文件设置为默认。
+    1、在构建之前需要上传android 的打包签名文件和iOS的证书和描述文件 。
+    2、登录网站 ：http://123.103.9.204:8050/ump/html/login.jsp#
+    3、账号支持原用友官网账号登录，也支持友互通登录（用友云账号以及绑定手机号）。
+    4、登录成功后 点击页面右上角的 构建管理- 安卓证书 或者iOS 证书。
+    5、android的签名文件上传需要提供签名文件 、密码、别名等 ，上传成功后，并设置为默认。
+    6、iOS 提供证书和匹配的描述文件 、证书的密码等，上传成功后，并将描述文件设置为默认。
+    7、执行构建命令 mtl build 时，需要输入用友云账号。
+    8、如果用友云账号不清楚是什么，可以登录友互通查询。
+    9、友互通地址：https://euc.yonyoucloud.com。
+    10、进入到友互通页面，点击左面菜单中 基本设置-->个人资料，可以查找到用友云账号。
+    11、用友云账号会关联在构建后台上传的证书文件。
 ```
 
 + 云构建server源码上传方式，将功能开发实现的静态源码资源与project.json 文件一并打包成zip压缩文件，上传至云构建server并完成构建打包。
