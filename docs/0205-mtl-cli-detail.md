@@ -241,14 +241,14 @@ pagename
 ```
 mtl  add-plugin 
 ```
-现在拥有的插件 ，持续开发中：[插件说明](http://mtltoolsdocs20190806.test.app.yyuap.com/0206-mtl-cli-plugin)
-+ mtl-plugin-faceverify 人脸识别
-+ mtl-plugin-bdlocation 定位
-+ mtl-plugin-terminal   多端控制
-+ mtl-plugin-umeng      三方友盟
-+ mtl-plugin-vui        语音交互
-+ mtl-plugin-notification 推送 （备注 不能同时启用两个推送）
-+ mtl-plugin-alinotification  阿里推送 （备注 不能同时启用两个推送）
+现在拥有的插件 ，持续开发中：
++ mtl-plugin-faceverify 人脸识别 [插件说明](http://mtltoolsdocs20190806.test.app.yyuap.com/0403-mtl-plugin-faceverify)
++ mtl-plugin-bdlocation 定位 [插件说明](http://mtltoolsdocs20190806.test.app.yyuap.com/0405-mtl-plugin-bdlocation)
++ mtl-plugin-terminal   多端控制 [插件说明](http://mtltoolsdocs20190806.test.app.yyuap.com/0401-mtl-plugin-mulTerminal)
++ mtl-plugin-umeng      三方友盟 [插件说明](http://mtltoolsdocs20190806.test.app.yyuap.com/0404-mtl-plugin-umeng)
++ mtl-plugin-vui        语音交互 [插件说明](http://mtltoolsdocs20190806.test.app.yyuap.com/0402-mtl-plugin-vui)
++ mtl-plugin-notification 推送 （备注 不能同时启用两个推送）[插件说明](http://mtltoolsdocs20190806.test.app.yyuap.com/0406-mtl-plugin-imPush)
++ mtl-plugin-alinotification  阿里推送 （备注 不能同时启用两个推送）[插件说明](http://mtltoolsdocs20190806.test.app.yyuap.com/0407-mtl-plugin-aliPush)
 ```
 用户进入多选 checkbox 操作中 ，通过按下 "空格" 键选择，
 上下箭头来移动光标，按下"a"实现全选, 按下"i"实现反选。
